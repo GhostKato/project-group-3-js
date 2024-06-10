@@ -1,0 +1,13 @@
+.reviews-container {
+  background-color: aqua;
+  color: rgb(79, 118, 35);
+}
+
+@media screen and (min-width: 360px) {
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1280px) {
+}

@@ -1,0 +1,13 @@
+.about-me-container {
+  background-color: rgb(33, 44, 95);
+  color: rgb(117, 45, 123);
+}
+
+@media screen and (min-width: 360px) {
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1280px) {
+}

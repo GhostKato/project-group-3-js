@@ -1,0 +1,23 @@
+.header {
+  margin: 0 auto;
+}
+
+.header-container {
+  background-color: rgb(27, 79, 55);
+  color: rgb(0, 21, 255);
+}
+
+@media screen and (max-width: 360px) {
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .header {
+    width: 1280px;
+  }
+}
