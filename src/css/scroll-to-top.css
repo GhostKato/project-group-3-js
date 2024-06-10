@@ -1,0 +1,38 @@
+.scroll-to-top {
+  display: flex;
+  align-items: center; /* Центрує по вертикалі */
+  justify-content: center; /* Центрує по горизонталі */
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 60px;
+  height: 60px;
+  background-color: #292626;
+  border-radius: 50%; /* Робить кнопку круглою */
+  cursor: pointer;
+  opacity: 0.6;
+  z-index: 99999;
+  border: 1px solid orange;
+  transition: background-color 0.3s, opacity 0.3s; /* Додає плавний перехід для зміни стилю */
+}
+
+.scroll-to-top:hover {
+  opacity: 1;
+  background-color: orange;
+}
+
+.scroll-to-top-icon {
+  fill: #fff; /* Задає колір для іконки */
+  display: block; /* Вимикає вбудований відступ */
+  margin: 0; /* Забезпечує відсутність зовнішніх відступів */
+  padding: 0; /* Забезпечує відсутність внутрішніх відступів */
+  width: 32px;
+  height: 32px;
+}
+
+@media screen and (max-width: 755px) {
+  .scroll-to-top {
+    width: 50px;
+    height: 50px;
+  }
+}

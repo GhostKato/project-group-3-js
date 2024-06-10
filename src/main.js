@@ -1,0 +1,11 @@
+import './js/header';
+import './js/hero';
+import './js/section2';
+import './js/section3';
+import './js/section4';
+import './js/section5';
+import './js/section6';
+import './js/section7';
+import './js/section8';
+import './js/footer';
+import './js/scroll-to-top';

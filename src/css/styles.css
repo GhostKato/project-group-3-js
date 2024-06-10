@@ -1,0 +1,75 @@
+/**
+  |============================
+  | include css partials with
+  | default @import url()
+  |============================
+*/
+@import 'modern-normalize';
+@import url('./reset.css');
+@import url('./header.css');
+@import url('./hero.css');
+@import url('./section2.css');
+@import url('./section3.css');
+@import url('./section4.css');
+@import url('./section5.css');
+@import url('./section6.css');
+@import url('./section7.css');
+@import url('./section8.css');
+@import url('./footer.css');
+@import url('./scroll-to-top.css');
+
+:root {
+  font-family: 'Roboto', sans-serif;
+
+  color: #fff;
+  background-color: #fbfbfb;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: rgb(27, 27, 27);
+  /* background-image: url('https://sotni.ru/wp-content/uploads/2023/08/razrabotka-koda-1.webp'); */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section-global {
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 30px;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 375px) {
+}
+
+/* Tablet */
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
+  }
+}
+
+/* Desktop */
+
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 1440px;
+  }
+}
