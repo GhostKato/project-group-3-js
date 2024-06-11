@@ -44,14 +44,14 @@
 }
 
 body {
-  background-color: white;
-  color: black;
+  background-color: #f0f0f0;
+  color: #292929;
   transition: background-color 0.5s, color 0.5s;
 }
 
 body.night-mode {
-  background-color: black;
-  color: white;
+  background-color: #1e2023;
+  color: #f0f0f0;
 }
 
 .section {
