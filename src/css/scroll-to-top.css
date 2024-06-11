@@ -1,33 +1,52 @@
 .scroll-to-top {
-  display: flex;
-  align-items: center; /* Центрує по вертикалі */
-  justify-content: center; /* Центрує по горизонталі */
   position: fixed;
   bottom: 40px;
   right: 40px;
   width: 60px;
   height: 60px;
-  background-color: #292626;
-  border-radius: 50%; /* Робить кнопку круглою */
+  background-color: transparent;
+  border-radius: 50%;
   cursor: pointer;
   opacity: 0.6;
   z-index: 99999;
-  border: 1px solid orange;
-  transition: background-color 0.3s, opacity 0.3s; /* Додає плавний перехід для зміни стилю */
+  border: 1px solid #14c57c;
+  transition: background-color 0.3s, opacity 0.3s;
 }
 
 .scroll-to-top:hover {
   opacity: 1;
-  background-color: orange;
+  background-color: #14c57c;
 }
 
 .scroll-to-top-icon {
-  fill: #fff; /* Задає колір для іконки */
-  display: block; /* Вимикає вбудований відступ */
-  margin: 0; /* Забезпечує відсутність зовнішніх відступів */
-  padding: 0; /* Забезпечує відсутність внутрішніх відступів */
-  width: 32px;
-  height: 32px;
+  display: block;
+  position: relative;
+  top: 15px;
+  left: 17px;
+  width: 22px;
+  height: 22px;
+  border-top: 4px solid #14c57c;
+  border-left: 4px solid #14c57c;
+  transform: rotate(43deg);
+}
+
+.scroll-to-top:hover > .scroll-to-top-icon {
+  border-color: #fff;
+}
+
+.scroll-to-top-icon::after {
+  content: '';
+  display: block;
+  width: 4px;
+  height: 28px;
+  transform: rotate(-45deg) translate(8px, 2px);
+  left: 0;
+  top: 0;
+  background-color: #14c57c;
+}
+
+.scroll-to-top:hover .scroll-to-top-icon::after {
+  background-color: #fff;
 }
 
 @media screen and (max-width: 755px) {
