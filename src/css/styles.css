@@ -23,10 +23,6 @@
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
   font-style: normal;
-
-  color: black;
-  background-color: #fff;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -48,10 +44,14 @@
 }
 
 body {
-  background-color: rgb(27, 27, 27);
-  /* background-image: url('https://sotni.ru/wp-content/uploads/2023/08/razrabotka-koda-1.webp'); */
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: white;
+  color: black;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+body.night-mode {
+  background-color: black;
+  color: white;
 }
 
 .section {
