@@ -1,5 +1,90 @@
 <section class="section">
   <div class="about-me-container container">
-    <h2 class="about-me-title">Section3</h2>
+    <h2 class="about-title">About <span class="about-title-span">me</span></h2>
+    <div class="about-bio-container">
+      <picture class="about-photo">
+        <source
+          srcset="
+            ./img/3-about-me/myphoto-desktop.jpg    1x,
+            ./img/3-about-me/myphoto-desktop@2x.jpg 2x
+          "
+          media="(min-width: 1158px)"
+        />
+        <source
+          srcset="
+            ./img/3-about-me/myphoto-tablet.jpg    1x,
+            ./img/3-about-me/myphoto-tablet@2x.jpg 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./img/3-about-me/myphoto-mobile.jpg    1x,
+            ./img/3-about-me/myphoto-mobile@2x.jpg 2x
+          "
+          media="(max-width: 767px)"
+        />
+        <img
+          src="./img/3-about-me/myphoto-mobile.jpg"
+          alt="My photo"
+          width="264"
+          height="260"
+        />
+      </picture>
+      <div class="about-bio">
+        <h3 class="about-me-title">Bio</h3>
+        <p class="about-bio-text">
+          I'm Lloyd Jefferson, a talented programmer specializing in software
+          development. My expertise spans various programming languages and
+          technologies, and I am dedicated to continually enhancing my skills. I
+          thrive on seeking unconventional and creative solutions to problems,
+          leveraging a high level of analytical skills to effectively tackle
+          even the most challenging tasks.
+        </p>
+        <p class="about-bio-text">
+          Adaptable to both independent and team-oriented work, I collaborate
+          seamlessly with colleagues, exchanging ideas and finding optimal
+          solutions. My professional maturity enables me to navigate challenges
+          and stressful situations with a calm demeanor, maintaining a
+          consistently high quality of work. Committed to self-improvement, I
+          actively engage in studying new technologies and practices to stay
+          current with the latest innovations in the field.
+        </p>
+      </div>
+    </div>
+    <div class="about-me-portfolio">
+      <div class="about-education">
+        <h3 class="about-me-title">Education</h3>
+        <ul class="about-education-menu">
+          <li class="about-education-list">
+            <span
+              >2018 - 2019 / Frontend Development Diploma, GoIT IT School, New
+              York</span
+            >
+          </li>
+          <li class="about-education-list">
+            <span
+              >2019 - 2020 / Advanced Web Development Certificate, GoIT IT
+              School, New York</span
+            >
+          </li>
+          <li class="about-education-list">
+            <span
+              >2020 - 2022 / Advanced Blender Animation Techniques, Udemy</span
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="about-role">
+        <h3 class="about-me-title">Role</h3>
+        <ul class="about-role-menu">
+          <li class="about-role-list"><span>Frontend development</span></li>
+          <li class="about-role-list">
+            <span>HeadlessCMS, Wordpress</span>
+          </li>
+          <li class="about-role-list"><span>Blender (enjoy)</span></li>
+        </ul>
+      </div>
+    </div>
   </div>
 </section>
