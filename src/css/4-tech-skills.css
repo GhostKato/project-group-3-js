@@ -78,8 +78,8 @@
   background: var(--Accet-green, #00B068);
   height: 8px;
   width: 8px;
-  margin-top: 20px;
-  margin-left: -24px;
+  margin-top: 17px;
+  margin-left: -21px;
 }
 
 .li-tech-skills-two::before {
@@ -89,8 +89,8 @@
   background: var(--Black, #292929);
   height: 8px;
   width: 8px;
-  margin-top: 20px;
-  margin-left: -24px;
+  margin-top: 17px;
+  margin-left: -21px;
 }
 
 .ribbon {
@@ -131,13 +131,13 @@
 /* dark theme */
 
 
-.ribbon-dark {
+body.night-mode  .ribbon-dark {
   background: #1E2023;
   margin: 0 !important;
   overflow: hidden;
 }
 
-.div-tech-dark {
+body.night-mode .div-tech-dark {
   background: #214136;
   padding: 40px 0px;
   align-items: center;
@@ -149,7 +149,7 @@
   width: 100%;
 }
 
-.div-tech-dark-two {
+body.night-mode .div-tech-dark-two {
   background: #2A2D32;
   padding: 40px 0px;
   align-items: center;
@@ -160,7 +160,7 @@
   width: 100%;
 }
 
-.tech-dark {
+body.night-mode .tech-dark {
   color: #F0F0F0;
   font-family: Poppins;
   font-size: 36px;
@@ -171,19 +171,19 @@
   text-transform: uppercase;
 }
 
-.tech-dark::before {
+body.night-mode .tech-dark::before {
   content: "";
   position: absolute;
   border-radius: 2px;
   background: #14C57C;
   height: 8px;
   width: 8px;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   margin-left: -24px;
 
 }
 
-.tech-dark-two {
+body.night-mode .tech-dark-two {
   color: #14C57C;
   font-family: Poppins;
   font-size: 36px;
@@ -194,14 +194,14 @@
   text-transform: uppercase;
 }
 
-.tech-dark-two::before {
+body.night-mode .tech-dark-two::before {
   content: "";
   position: absolute;
   border-radius: 2px;
   background: #F0F0F0;
   height: 8px;
   width: 8px;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   margin-left: -24px;
 }
 
@@ -235,21 +235,21 @@
     margin-left: -22px;
   }
 
-  .tech-dark {
+  body.night-mode .tech-dark {
     font-size: 32px;
     line-height: 40px;
   }
 
-  .tech-dark-two {
+  body.night-mode .tech-dark-two {
     font-size: 32px;
     line-height: 40px;
   }
 
-  .tech-dark::before {
+  body.night-mode .tech-dark::before {
     margin-left: -22px;
   }
 
-  .tech-dark-two::before {
+  body.night-mode .tech-dark-two::before {
     margin-left: -22px;
   }
 }
