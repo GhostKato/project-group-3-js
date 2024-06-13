@@ -3,7 +3,7 @@
                 <div class="project-info">
                 <p class="project-technologies">${c.technologies}</p>
                     <p class="project-title">${c.title}</p>
-                    <a class="project-link" href="${c.link}" target="_blank">VISIT</a>
+                    <button class="project-link" onclick="window.open('${c.link}', '_blank')">VISIT</button>
                 </div>
             `,s.appendChild(d),n++}}e.addEventListener("click",t),t()});(()=>{const o={openModalBtn:document.querySelector("[data-menu-open]"),closeModalBtn:document.querySelector("[data-menu-close]"),modal:document.querySelector("[data-menu]")};o.openModalBtn.addEventListener("click",n),o.closeModalBtn.addEventListener("click",n);function n(){o.modal.classList.toggle("is-open")}function r(){function s(t,i){let c=document.querySelector(t);if(!c){console.log("елемент куди скролити не знайдено:",t);return}let d=c.getBoundingClientRect().top,u=window.pageYOffset,g=null;const f=function(l,a,m,y){return l/=y/2,l<1?m/2*l*l+a:(l--,-m/+a)},p=function(l){g===null&&(g=l);const a=l-g,m=f(a,u,d,i);window.scrollTo(0,m),a<i&&requestAnimationFrame(p)};requestAnimationFrame(p)}const e=document.querySelectorAll("a.scroll-to");e&&e.forEach(t=>{t.addEventListener("click",function(i){i.preventDefault();const c=this.getAttribute("href");o.modal.classList.contains("is-open")&&o.modal.classList.remove("is-open"),s(c,1e3)})})}r()})();document.addEventListener("DOMContentLoaded",function(){const o=document.querySelector(".scroll-to-top");window.addEventListener("scroll",()=>{window.scrollY>300?o.style.display="block":o.style.display="none"}),o.addEventListener("click",()=>{window.scrollTo({top:0,behavior:"smooth"})})});
 //# sourceMappingURL=commonHelpers.js.map
