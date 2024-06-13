@@ -5,17 +5,18 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/project-group-4-js/",
+    "build": "vite build --base=/project-group-3-js/",
     "preview": "vite preview"
   },
   "devDependencies": {
     "glob": "^8.1.0",
-    "vite": "^4.5.2"
+    "vite": "^4.5.3"
   },
   "author": "Maksym Osadchenko <osadchenko.maksym@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "accordion-js": "^3.3.4",
+    "axios": "^1.7.2",
     "modern-normalize": "^2.0.0",
     "swiper": "^11.1.3",
     "vite-plugin-full-reload": "^1.0.5",

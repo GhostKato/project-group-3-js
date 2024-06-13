@@ -1,13 +1,153 @@
 .my-projects-container {
-  color: #17a5e4;
-  background-color: #5617e4;
+  color: #292929;
+  background-color: #F0F0F0;
 }
 
-@media screen and (min-width: 360px) {
+
+.my-projects-title {
+  font-family: Impact;
+  text-align: center;
+  font-size: 52px;
+  font-weight: 400;
+  line-height: 1.23;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
-@media screen and (min-width: 768px) {
+.my-projects-title span {
+  color: #00a86b;
 }
 
-@media screen and (min-width: 1280px) {
+.project-image {
+  border-radius: 16px;
+  width: 100%;
+  height: auto;
+  padding-bottom: 12px;
+  padding-top: 40px;
 }
+
+.project-technologies {
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  padding-bottom: 16px;
+}
+
+
+
+.project-title {
+  font-family: Poppins;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+
+
+#project-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-item {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 20px;
+}
+
+
+.project-link {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #E4E5E6;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+  float: right;
+}
+
+.project-link:hover {
+  background-color: ##BBBBBB;
+}
+
+/* гребаная стрелка, только див удалила из js*/
+
+/* .projects-arrow-up-right {
+  position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 20px;
+    height: 20px;
+    transform: rotate(90deg);
+}
+
+.projects-arrow-up-right::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  top: 13px;
+    left: 15px;
+    width: 18px;
+    height: 18px;
+  border-style: solid;
+  border-width: 3px 0px 0 0;
+  border-color: #00B068 transparent;
+} */
+
+#load-more {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+#load-more:hover {
+  background-color: #555;
+}
+
+/* 
+@media (min-width: 360px) {
+  .project-item {
+    width: calc(100% - 40px);
+  }
+}
+
+@media (min-width: 768px) {
+  .project-item {
+    width: calc(50% - 40px);
+  }
+}
+
+@media (min-width: 1280px) {
+  .project-item {
+    width: calc(33.333% - 40px);
+  }
+} */

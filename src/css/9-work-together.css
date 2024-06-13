@@ -1,13 +1,231 @@
 .work-together-container {
-  color: #233840;
-  background-color: #b85f66;
+}
+
+.together-title {
+  font-family: Impact;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 64px;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.together-title-green {
+  color: #00b068;
+}
+
+.contacts-and-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.together-contacts-container {
+  margin-bottom: 40px;
+}
+
+.together-contacts-title {
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.55;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.together-contacts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.together-contacts-item {
+  position: relative;
+}
+
+.together-svg {
+  fill: transparent;
+  stroke: green;
+  position: absolute;
+}
+
+.together-contacts-link {
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0.003em;
+  margin-left: 40px;
+}
+
+.together-contacts-link:hover {
+  color: #009156;
+}
+
+.together-form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 80px;
+}
+
+.together-email {
+  width: 100%;
+  /* display: flex; */
+  height: 48px;
+  padding: 16px;
+  border-radius: 8px;
+  border: none;
+  background: #e4e5e6;
+  /* align-items: center;
+  gap: 10px;
+  align-self: stretch; */
+}
+
+.together-email:focus {
+  outline: 2px solid #009156;
+}
+
+.together-text {
+  width: 100%;
+  height: 128px;
+  border-radius: 8px;
+  padding: 16px;
+  border: none;
+  background: #e4e5e6;
+  resize: none;
+}
+
+.together-text:focus {
+  outline: 2px solid #009156;
+}
+
+.together-email::placeholder,
+.together-text::placeholder {
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.03rem;
+}
+
+.together-button {
+  width: 100%;
+  height: 48px;
+  border-radius: 8px;
+  background: #00b068;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #f0f0f0;
+}
+
+.together-button:hover {
+  background: #009156;
 }
 
 @media screen and (min-width: 360px) {
 }
 
+/* TABLET */
+
 @media screen and (min-width: 768px) {
+  .work-together-container {
+    background-image: url(../img/9-work-together/together-tablet.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .work-together-container {
+      background-image: url(../img/9-work-together/together-tablet2x.png);
+    }
+  }
+
+  .together-title {
+    font-size: 108px;
+    line-height: 1.14;
+    letter-spacing: 0.016em;
+    margin-bottom: 60px;
+    max-width: 530px;
+  }
+
+  .together-contacts-container {
+    margin-bottom: 60px;
+  }
+
+  .together-contacts-title {
+    font-size: 20px;
+    line-height: 1.6;
+    letter-spacing: 0.025em;
+    max-width: 488px;
+  }
+
+  .together-contacts-list {
+    flex-direction: row;
+  }
+
+  .together-form {
+    margin-bottom: 124px;
+  }
+
+  .together-button {
+    width: 173px;
+  }
 }
 
+/* DESKTOP */
+
 @media screen and (min-width: 1280px) {
+  .work-together-container {
+    background-image: url(../img/9-work-together/together-desktop.png);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .work-together-container {
+      background-image: url(../img/9-work-together/together-desktop2x.png);
+    }
+  }
+
+  .together-title {
+    margin-bottom: 80px;
+  }
+  .contacts-and-form {
+    flex-direction: row;
+    gap: 136px;
+  }
+
+  .together-contacts-container {
+    margin-bottom: 0;
+  }
+
+  .together-contacts-title {
+    margin-bottom: 120px;
+  }
+
+  .together-contacts-list {
+    flex-direction: column;
+  }
+
+  .together-form {
+    margin-bottom: 164px;
+    flex-grow: 1;
+  }
 }

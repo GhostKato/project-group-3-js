@@ -23,15 +23,16 @@
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
   font-style: normal;
-
-  color: black;
-  background-color: #fff;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+@font-face {
+  font-family: 'Impact';
+  src: url('/src/font/impact.ttf') format('truetype');
 }
 
 .visually-hidden {
@@ -48,21 +49,25 @@
 }
 
 body {
-  background-color: rgb(27, 27, 27);
-  /* background-image: url('https://sotni.ru/wp-content/uploads/2023/08/razrabotka-koda-1.webp'); */
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #f0f0f0;
+  color: #292929;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+body.night-mode {
+  background-color: #1e2023;
+  color: #f0f0f0;
 }
 
 .section {
-  margin-left: 15px;
-  margin-right: 15px;
-  margin-top: 30px;
+  padding-top: 80px;
 }
 
 .container {
   width: 100%;
   margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 @media screen and (min-width: 360px) {
@@ -76,6 +81,12 @@ body {
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .section {
+    padding-top: 124px;
   }
 }
 
@@ -84,5 +95,9 @@ body {
 @media screen and (min-width: 1280px) {
   .container {
     width: 1280px;
+  }
+
+  .section {
+    padding-top: 164px;
   }
 }
