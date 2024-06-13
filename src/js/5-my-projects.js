@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="project-info">
                 <p class="project-technologies">${project.technologies}</p>
                     <p class="project-title">${project.title}</p>
-                    <a class="project-link" href="${project.link}" target="_blank">VISIT</a>
+                    <button class="project-link" onclick="window.open('${project.link}', '_blank')">VISIT</button>
                 </div>
             `;
             projectList.appendChild(listItem);
