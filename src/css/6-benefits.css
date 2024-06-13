@@ -1,5 +1,5 @@
 .benefits-container {
-  
+
 }
 .benefits-title {
   font-family: Impact;
@@ -52,8 +52,11 @@ li > .text-last {
 }
 
 .benefits-icon {
-  stroke: var(--Accent-primary);
+  /* stroke: var(--Accent-primary);
+  fill: transparent; */
   fill: transparent;
+  stroke: #14c57c;
+  position: absolute;
 }
 
 /* ================= */
