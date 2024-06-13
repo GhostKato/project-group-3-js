@@ -130,7 +130,6 @@
 
 /* dark theme */
 
-
 body.night-mode  .ribbon-dark {
   background: #1E2023;
   margin: 0 !important;
@@ -148,7 +147,7 @@ body.night-mode .div-tech-dark {
   display: inline-flex;
   width: 100%;
 }
-
+  
 body.night-mode .div-tech-dark-two {
   background: #2A2D32;
   padding: 40px 0px;
@@ -178,9 +177,8 @@ body.night-mode .tech-dark::before {
   background: #14C57C;
   height: 8px;
   width: 8px;
-  /* margin-top: 20px; */
+  margin-top: 20px;
   margin-left: -24px;
-
 }
 
 body.night-mode .tech-dark-two {
@@ -201,8 +199,7 @@ body.night-mode .tech-dark-two::before {
   background: #F0F0F0;
   height: 8px;
   width: 8px;
-  /* margin-top: 20px; */
-  margin-left: -24px;
+  margin-top: 20px;
 }
 
 /* media screen */
@@ -234,7 +231,7 @@ body.night-mode .tech-dark-two::before {
   .li-tech-skills-two::before {
     margin-left: -22px;
   }
-
+  
   body.night-mode .tech-dark {
     font-size: 32px;
     line-height: 40px;

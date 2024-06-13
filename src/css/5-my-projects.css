@@ -16,6 +16,7 @@
   margin: 0 auto;
   max-width: 100%;
   box-sizing: border-box;
+  padding-bottom: 40px;
 }
 
 .my-projects-title span {
@@ -26,8 +27,6 @@
   border-radius: 16px;
   width: 100%;
   height: auto;
-  padding-bottom: 12px;
-  padding-top: 40px;
 }
 
 .project-technologies {
@@ -38,6 +37,7 @@
   line-height: 1.5;
   letter-spacing: 0.03em;
   padding-bottom: 16px;
+  padding-top: 12px;
 }
 
 
@@ -76,6 +76,7 @@
   display: inline-block;
   padding: 10px 20px;
   margin-top: 10px;
+  margin-bottom: 40px;
   background-color: #E4E5E6;
   font-family: Poppins;
   font-size: 16px;
@@ -86,6 +87,7 @@
   border-radius: 8px;
   transition: background-color 0.3s;
   float: right;
+  border: none;
 }
 
 .project-link:hover {
@@ -118,19 +120,31 @@
 
 #load-more {
   display: block;
-  margin: 20px auto;
+  margin: 0 auto;
   padding: 10px 20px;
-  font-size: 16px;
   cursor: pointer;
-  background-color: #333;
-  color: #fff;
+  color: #292929;
   border: none;
-  border-radius: 5px;
-  transition: background-color 0.3s;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+
+
 }
 
 #load-more:hover {
   background-color: #555;
+}
+
+.arrow-load-more {
+  height: 0px;
+    width: 100%;
+    border-top: 2px solid #00B068;
+    transform: translateY(-50%) rotate(0deg);
 }
 
 /* 
