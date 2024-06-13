@@ -1,9 +1,257 @@
-.tech-skills-container {
-  color: #97b627;
-  background-color: #613256;
+.div-skills-list {
+  background: var(--Light-accent, #BCDFD1);
+  padding: 40px 0px;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+  z-index: 10;
+  height: 128px;
+  display: inline-flex;
+  width: 100%;
 }
 
+.div-skills-list-two {
+  background: var(--Light-grey, #E4E5E6);
+  padding: 40px 0px;
+  align-items: center;
+  gap: 16px;
+  transform: rotate(3deg);
+  height: 128px;
+  display: inline-flex;
+  width: 100%;
+}
+
+.ul-tech-skills {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 40px 0px;
+  align-items: center;
+  gap: 40px;
+}
+
+.ul-tech-skills-two {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 40px 0px;
+  align-items: center;
+  gap: 40px;
+}
+
+.ul-tech-skills-two:first-child {
+  margin-left: 40px;
+}
+
+.li-tech-skills {
+  color: var(--Black, #292929);
+  font-family: Poppins;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  text-wrap: nowrap;
+}
+
+.ul-tech-skills:first-child {
+  margin-left: 40px;
+}
+
+.li-tech-skills-two {
+  color: var(--Accet-green, #00B068);
+  font-family: Poppins;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  text-wrap: nowrap;
+}
+
+.li-tech-skills::before {
+  content: "";
+  position: absolute;
+  border-radius: 2px;
+  background: var(--Accet-green, #00B068);
+  height: 8px;
+  width: 8px;
+  margin-top: 20px;
+  margin-left: -24px;
+}
+
+.li-tech-skills-two::before {
+  content: "";
+  position: absolute;
+  border-radius: 2px;
+  background: var(--Black, #292929);
+  height: 8px;
+  width: 8px;
+  margin-top: 20px;
+  margin-left: -24px;
+}
+
+.ribbon {
+  margin: 0 !important;
+  overflow: hidden;
+  /* background: var(--White, #F0F0F0); */
+}
+
+.ul-tech-skills {
+  animation-name: livingGallery;
+  animation-duration: 12s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.ul-tech-skills-two {
+  animation-name: livingGallery;
+  animation-duration: 12s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes livingGallery {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(-103%, 0);
+  }
+}
+
+.mg-left-20 {
+  margin-left: 20px;
+}
+
+
+/* dark theme */
+
+
+.ribbon-dark {
+  background: #1E2023;
+  margin: 0 !important;
+  overflow: hidden;
+}
+
+.div-tech-dark {
+  background: #214136;
+  padding: 40px 0px;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+  z-index: 10;
+  height: 128px;
+  display: inline-flex;
+  width: 100%;
+}
+
+.div-tech-dark-two {
+  background: #2A2D32;
+  padding: 40px 0px;
+  align-items: center;
+  gap: 16px;
+  transform: rotate(3deg);
+  height: 128px;
+  display: inline-flex;
+  width: 100%;
+}
+
+.tech-dark {
+  color: #F0F0F0;
+  font-family: Poppins;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.tech-dark::before {
+  content: "";
+  position: absolute;
+  border-radius: 2px;
+  background: #14C57C;
+  height: 8px;
+  width: 8px;
+  margin-top: 20px;
+  margin-left: -24px;
+
+}
+
+.tech-dark-two {
+  color: #14C57C;
+  font-family: Poppins;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.tech-dark-two::before {
+  content: "";
+  position: absolute;
+  border-radius: 2px;
+  background: #F0F0F0;
+  height: 8px;
+  width: 8px;
+  margin-top: 20px;
+  margin-left: -24px;
+}
+
+/* media screen */
+
 @media screen and (min-width: 360px) {
+  .div-skills-list {
+    height: 104px;
+  }
+
+  .div-skills-list-two {
+    height: 104px;
+    transform: rotate(4deg);
+  }
+
+  .li-tech-skills {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .li-tech-skills-two {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .li-tech-skills::before {
+    margin-left: -22px;
+  }
+
+  .li-tech-skills-two::before {
+    margin-left: -22px;
+  }
+
+  .tech-dark {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .tech-dark-two {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .tech-dark::before {
+    margin-left: -22px;
+  }
+
+  .tech-dark-two::before {
+    margin-left: -22px;
+  }
 }
 
 @media screen and (min-width: 768px) {
