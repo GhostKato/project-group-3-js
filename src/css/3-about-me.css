@@ -1,6 +1,6 @@
 .about-me-container {
-  max-width: 320px;
-  align-content: center;
+  display: block;
+  width: 360px;
 }
 
 .about-title {
@@ -17,10 +17,23 @@
   color: #00b068;
 }
 
-.about-photo img {
-  width: 100%;
+.about-photo {
+  display: inline-block;
   border-radius: 16px;
-  margin-bottom: 40px;
+  overflow: hidden;
+  position: relative;
+  width: 320px;
+  height: 374px;
+}
+
+.about-photo img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.about-bio-container {
+  width: 320px;
 }
 
 .about-me-title {
@@ -30,6 +43,7 @@
   line-height: 40px;
   text-transform: uppercase;
   margin-bottom: 32px;
+  padding-top: 40px;
 }
 
 .about-bio-text {
@@ -43,46 +57,32 @@
   margin-bottom: 24px;
 }
 
-.about-education-list {
-  font-weight: 300;
-  font-size: 16px;
-  letter-spacing: 0.2px;
-  line-height: 24px;
-  list-style: disc;
-  color: #00b068;
-}
-
-.about-education-list:not(:last-child) {
-  margin-bottom: 16px;
-}
-
-.about-education-list span {
-  color: #292929;
-}
-
-.about-role {
-  margin-top: 40px;
-}
-
-.about-role-menu {
-  padding-left: 10px;
-}
-
+.about-education-list,
 .about-role-list {
+  position: relative;
   font-weight: 300;
   font-size: 16px;
   letter-spacing: 0.2px;
   line-height: 24px;
-  list-style: disc;
+  padding-left: 20px;
+}
+
+.about-education-list::before,
+.about-role-list::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  top: 0;
   color: #00b068;
 }
 
+.about-education-list:not(:last-child),
 .about-role-list:not(:last-child) {
   margin-bottom: 16px;
 }
 
-.about-role-list span {
-  color: #292929;
+.about-role-menu {
+  padding-left: 10px;
 }
 
 @media screen and (max-width: 360px) {
@@ -90,14 +90,32 @@
     display: none;
   }
 
+  .about-me-container {
+    justify-content: center;
+    align-items: center;
+  }
+
   .about-education-menu {
     padding-left: 10px;
+    max-width: 300px;
   }
 }
 
 @media screen and (min-width: 360px) {
   .about-back-img {
     display: none;
+  }
+
+  .about-me-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-education-menu {
+    padding-left: 10px;
+    max-width: 300px;
   }
 }
 
@@ -107,11 +125,23 @@
     max-width: 100%;
   }
 
-  .about-photo img {
+  .about-photo {
+    margin-top: 336px;
+    display: inline-block;
     border-radius: 16px;
+    overflow: hidden;
     width: 336px;
+    height: 392px;
+  }
+  .about-photo img {
+    width: 336px;
+    height: 392px;
+    object-fit: cover;
+    border-radius: 16px;
     margin-bottom: 40px;
-    padding-top: 336px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .about-bio-container {
@@ -119,6 +149,8 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 40px;
+    width: 100%;
   }
 
   .about-title {
@@ -128,11 +160,14 @@
   }
 
   .about-me-title {
+    font-weight: 500;
     font-size: 36px;
     letter-spacing: 0.5px;
     line-height: 48px;
     text-align: start;
     margin-bottom: 32px;
+    text-transform: uppercase;
+    padding-top: 0;
   }
 
   .about-bio-text {
@@ -151,7 +186,7 @@
   .about-bio::after {
     content: '';
     position: absolute;
-    bottom: -120px;
+    bottom: -165px;
     right: 0;
     width: 336px;
     height: 252px;
@@ -160,20 +195,26 @@
     z-index: -1;
   }
 
+  .about-me-portfolio {
+    display: flex;
+  }
+
+  .about-education-menu {
+    padding-left: 10px;
+    max-width: 320px;
+  }
   @media screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx),
     screen and (min-device-pixel-ratio: 2) {
     .about-bio::after {
-      background: url('../img/3-about-me/about-bg@2x.png') no-repeat;
+      background: url(../img/3-about-me/about-bg@2x.png) no-repeat;
       background-size: cover;
     }
   }
 }
 
 .about-me-portfolio {
-  display: flex;
   gap: 32px;
-
   position: relative;
   z-index: 0;
 }
@@ -182,42 +223,9 @@
   width: 384px;
 }
 
-.about-education-list {
-  font-weight: 300;
-  font-size: 16px;
-  letter-spacing: 0.2px;
-  line-height: 24px;
-  list-style: disc;
-  color: #00b068;
-}
-.about-education-list:not(:last-child) {
-  margin-bottom: 16px;
-}
-
-.about-education-list span {
-  color: #292929;
-}
-
 .about-role {
   width: 384px;
   margin-top: 0;
-}
-
-.about-role-list {
-  font-weight: 300;
-  font-size: 16px;
-  letter-spacing: 0.2px;
-  line-height: 24px;
-  list-style: disc;
-  color: #00b068;
-}
-
-.about-role-list:not(:last-child) {
-  margin-bottom: 16px;
-}
-
-.about-role-list span {
-  color: #292929;
 }
 
 @media screen and (min-width: 1280px) {
@@ -225,11 +233,18 @@
     justify-content: end;
   }
 
-  .about-photo img {
+  .about-photo {
+    margin-top: 270px;
     margin-right: 136px;
-    border-radius: 16px;
     width: 384px;
-    padding-top: 275px;
+    height: 448px;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+  .about-photo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
   }
 
   .about-bio-text {
@@ -239,12 +254,14 @@
   .about-bio::after {
     width: 384px;
     height: 288px;
-    bottom: -20px;
+    bottom: -50px;
   }
 
   .about-me-portfolio {
     padding-left: 208px;
+    gap: 0;
   }
+
   .about-education {
     margin-right: 136px;
   }
