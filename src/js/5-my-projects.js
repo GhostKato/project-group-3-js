@@ -1,15 +1,15 @@
 document.addEventListener('DOMContentLoaded', function() {
     const projects = [
-        {title: "Wallet webservice", image: "img/5-my-projects/image1.jpg", technologies: "React, JavaScript, Node JS, Git", link: "#"},
-        {title: "Green harvest webservice", image: "img/5-my-projects/image2.jpg", technologies: "React, JavaScript, Node JS, Git", link: "#"},
-        {title: "English Exellence website", image: "img/5-my-projects/image3.jpg", technologies: "React, JavaScript, Node JS, Git", link: "#"},
-        {title: "mimino website", image: "img/5-my-projects/image4.jpg", technologies: "React, JavaScript, Node JS, Git", link: "#"},
-        {title: "power pulse webservice ", image: "img/5-my-projects/image5.jpg", technologies: "React, JavaScript, Node JS, Git", link: "#"},
-        {title: "chego jewelry website", image: "img/5-my-projects/image6.jpg", technologies: "React, JavaScript, Node JS, Git", link: "#"},
-        {title: "energy flow webservice", image: "img/5-my-projects/image7.jpg", technologies: "React, JavaScript, Node JS, Git", link: "#"},
-        {title: "fruitbox online store", image: "img/5-my-projects/image8.jpg", technologies: "React, JavaScript, Node JS, Git", link: "#"},
-        {title: "vyshyvanka vibes Landing Page", image: "img/5-my-projects/image9.jpg", technologies: "React, JavaScript, Node JS, Git", link: "#"},
-        {title: "starlight studio landing page", image: "img/5-my-projects/image10.jpg", technologies: "React, JavaScript, Node JS, Git", link: "#"}
+        {title: "Wallet webservice", image: "/img/5-my-projects/image1.jpg", technologies: "React, JavaScript, Node JS, Git", link: "#"},
+        {title: "Green harvest webservice", image: "/img/5-my-projects/image2.jpg", technologies: "React, JavaScript, Node JS, Git", link: "#"},
+        {title: "English Exellence website", image: "/img/5-my-projects/image3.jpg", technologies: "React, JavaScript, Node JS, Git", link: "#"},
+        {title: "mimino website", image: "/img/5-my-projects/image4.jpg", technologies: "React, JavaScript, Node JS, Git", link: "#"},
+        {title: "power pulse webservice ", image: "/img/5-my-projects/image5.jpg", technologies: "React, JavaScript, Node JS, Git", link: "#"},
+        {title: "chego jewelry website", image: "/img/5-my-projects/image6.jpg", technologies: "React, JavaScript, Node JS, Git", link: "#"},
+        {title: "energy flow webservice", image: "/img/5-my-projects/image7.jpg", technologies: "React, JavaScript, Node JS, Git", link: "#"},
+        {title: "fruitbox online store", image: "/img/5-my-projects/image8.jpg", technologies: "React, JavaScript, Node JS, Git", link: "#"},
+        {title: "vyshyvanka vibes Landing Page", image: "/img/5-my-projects/image9.jpg", technologies: "React, JavaScript, Node JS, Git", link: "#"},
+        {title: "starlight studio landing page", image: "/img/5-my-projects/image10.jpg", technologies: "React, JavaScript, Node JS, Git", link: "#"}
         
     ];
 
