@@ -42,8 +42,9 @@
   flex-direction: column;
   gap: 24px;
 }
+
+
 .footer-media-item {
-  
 }
 .footer-media-link {
   color: var(--Black, #292929);
@@ -54,6 +55,11 @@
   line-height: 1.5;
   letter-spacing: 0.031em;
 }
+
+.footer-media-link:hover {
+  color: var(--Accet-green, #00B068);
+}
+
 .footer-paragraph {
   color: var(--Black, #292929);
   text-align: center;

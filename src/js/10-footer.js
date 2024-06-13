@@ -6,7 +6,8 @@ document.addEventListener('DOMContentLoaded', function() {
       const screenPosition = window.innerHeight;
   
       if (footerPosition < screenPosition) {
-        footer.classList.add('visible');
+          footer.classList.add('visible');
+          updatePreview();
       }
     }
   
