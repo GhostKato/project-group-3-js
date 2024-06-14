@@ -48,7 +48,7 @@
 
 .together-svg {
   fill: transparent;
-  stroke: green;
+  stroke: #00b068;
   position: absolute;
 }
 
@@ -81,9 +81,6 @@
   border-radius: 8px;
   border: none;
   background: #e4e5e6;
-  /* align-items: center;
-  gap: 10px;
-  align-self: stretch; */
 }
 
 .together-email:focus {
@@ -112,6 +109,7 @@
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.03rem;
+  color: rgba(41, 41, 41, 0.4);
 }
 
 .together-button {
@@ -135,6 +133,34 @@
 
 .together-button:hover {
   background: #009156;
+}
+
+.position-together-error {
+  position: relative;
+}
+
+.together-error {
+  display: none;
+  color: #f05748;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.33;
+  letter-spacing: 0.041em;
+  position: absolute;
+  top: 50px;
+}
+
+.together-ok {
+  display: none;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: #14c57c;
+  border-radius: 50%;
+  top: 16px;
+  right: 16px;
 }
 
 @media screen and (min-width: 360px) {
@@ -228,4 +254,129 @@
     margin-bottom: 164px;
     flex-grow: 1;
   }
+}
+
+/* Together Modal Window */
+
+.together-modal {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: #1e2023cc;
+}
+
+.together-modal-content {
+  width: 320px;
+  height: 328px;
+  padding: 48px 32px 48px 32px;
+  border-radius: 16px;
+  background: #f0f0f0;
+  position: relative;
+}
+
+.together-modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  height: 30px;
+  width: 30px;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.together-modal-svg {
+  stroke-width: 2px;
+  stroke: black;
+}
+
+.together-modal-svg:hover {
+  stroke: #14c57c;
+}
+
+.together-modal-title {
+  margin-bottom: 16px;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  color: #00b068;
+}
+
+.together-modal-text {
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .together-modal-content {
+    width: 492px;
+    height: 280px;
+    padding: 64px;
+  }
+}
+
+/* Night mode */
+
+/* Section 9 */
+
+.night-mode .together-title-green {
+  color: #14c57c;
+}
+
+.night-mode .together-svg {
+  color: #14c57c;
+}
+
+.night-mode .together-button {
+  background-color: #14c57c;
+}
+
+.night-mode .together-email {
+  background-color: #2a2d32;
+  color: #f0f0f0;
+}
+
+.night-mode .together-text {
+  background-color: #2a2d32;
+  color: #f0f0f0;
+}
+
+.night-mode .together-email::placeholder {
+  color: #575252;
+}
+
+.night-mode .together-text::placeholder {
+  color: #575252;
+}
+
+/* Together modal*/
+.night-mode .together-modal-svg {
+  stroke: #f0f0f0;
+}
+
+.night-mode .together-modal-svg:hover {
+  stroke: #14c57c;
+}
+
+.night-mode .together-modal-content {
+  background-color: #2a2d32;
 }
