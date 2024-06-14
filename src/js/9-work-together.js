@@ -1,24 +1,6 @@
 import axios from "axios";
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
-import iconsSvgUrl from '../img/icons.svg';
-
-const body = document.body;
-
-const togetherHtml = `
-    <div id="together-modal" class="together-modal">
-        <div class="together-modal-content">
-            <button class="together-modal-close">
-                <svg class="together-modal-svg" width="24" height="24">
-                    <use href="${iconsSvgUrl}#icon-x"></use>
-                </svg>
-            </button>
-            <h3 class="together-modal-title">Thank you for your interest in cooperation!</h3>
-            <p class="together-modal-text">The manager will contact you shortly to discuss further details and opportunities for cooperation. Please stay in touch.</p>
-        </div>
-    </div>
-`;
-body.insertAdjacentHTML('beforeend', togetherHtml);
 
 const form = document.querySelector('.together-form');
 const modal = document.getElementById('together-modal');
