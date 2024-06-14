@@ -10,20 +10,17 @@
 .header-logo {
   font-family: Impact;
   font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px; /* 100% */
-  letter-spacing: 1.5px;
+  line-height: 1;
+  letter-spacing: 0.0625em;
   text-transform: uppercase;
 }
 .logo-part {
   color: var(--Accet-green, #00b068);
   font-family: Impact;
   font-size: 24px;
-  font-style: normal;
   font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 1.5px;
+  line-height: 1;
+  letter-spacing: 0.0625em;
   text-transform: uppercase;
 }
 
@@ -37,13 +34,12 @@
 }
 
 .navigation-list-item {
-  font-family: Poppins;
   font-size: 16px;
-  font-style: normal;
   font-weight: 300;
-  line-height: 24px; /* 150% */
+  line-height: 1.5;
   letter-spacing: 0.5px;
   white-space: nowrap;
+  transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-btn {
@@ -68,7 +64,7 @@
   height: 32px;
 }
 
-body.night-mode .menu-icon {
+.night-mode .menu-icon {
   fill: #f0f0f0;
 }
 
@@ -97,8 +93,6 @@ body.night-mode .menu-icon {
   background-color: #e4e5e6;
   transition: background-color 0.3s;
   border-radius: 30px;
-
-  border-color: #f0f0f0;
 }
 
 .toggle-slider .toggle-circle {
@@ -112,15 +106,15 @@ body.night-mode .menu-icon {
   transition: left 0.3s, background-color 0.3s;
 }
 
-input:checked + .toggle-slider {
+#toggle-night-mode:checked + .toggle-slider {
   background-color: #2a2d32;
 }
 
-input:checked + .toggle-slider .toggle-circle {
+#toggle-night-mode:checked + .toggle-slider .toggle-circle {
   left: 27px;
 }
 
-input:checked + .toggle-slider .toggle-circle::before {
+#toggle-night-mode:checked + .toggle-slider .toggle-circle::before {
   display: block;
   text-align: center;
   line-height: 24px;
@@ -135,7 +129,7 @@ input:checked + .toggle-slider .toggle-circle::before {
   transition: background-color 0.3s;
 }
 
-input:checked + .toggle-slider .elipse {
+#toggle-night-mode:checked + .toggle-slider .elipse {
   background-color: #2a2d32;
 }
 
@@ -190,15 +184,14 @@ input:checked + .toggle-slider .elipse {
     border-radius: 8px;
     background: #14c57c;
     color: #f0f0f0;
-    font-family: Poppins;
     font-size: 16px;
-    font-style: normal;
     font-weight: 500;
-    line-height: 24px; /* 150% */
-    letter-spacing: 0.5px;
+    line-height: 1.5;
+    letter-spacing: 0.03125em;
     text-transform: uppercase;
     border-style: none;
     margin-left: 82px;
+    transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .order-project:hover {
