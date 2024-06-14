@@ -1,6 +1,25 @@
 <header class="header">
   <div class="header-container container">
-    <h2 class="header-title">header</h2>
-    <button id="toggle-night-mode">Нічний режим</button>
+    <nav class="header-navigation">
+      <a class="header-logo" href="">LLOYD<span class="logo-part">JEFFERSON.</span></a>
+      <ul class="navigation-list">
+        <li class="navigation-list-item"><a href="#about-me">About me</a></li>
+        <li class="navigation-list-item"><a href="#projects">Projects</a></li>
+        <li class="navigation-list-item"><a href="#contacts">Contacts</a></li>
+      </ul>
+    </nav>
+    <label class="theme-switch">
+      <input type="checkbox" id="toggle-night-mode">
+      <div class="toggle-slider">
+        <div class="toggle-circle"></div>
+        <div class="elipse"></div>
+      </div>
+    </label>
+    <a class="order-project" href="#work-together">Order the project</a>
+    <button class="menu-btn" type="button" data-menu-open>
+      <svg class="menu-icon">
+        <use class="menu-link" href="./img/icons.svg#icon-material-symbols-light_menu"></use>
+      </svg>
+    </button>
   </div>
 </header>
