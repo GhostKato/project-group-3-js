@@ -126,6 +126,8 @@ li > .text-last {
   }
 
   .benefits {
+    width: 1280px;
+    margin: 0 auto;
     position: relative;
     background-image: url("../img/6-benefits/decor bg 31x.png"); 
     background-repeat: no-repeat;
