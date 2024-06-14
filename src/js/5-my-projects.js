@@ -23,12 +23,12 @@ import iconsSvgUrl from '/img/icons.svg';
 
 document.addEventListener('DOMContentLoaded', function () {
     const projects = [
-        {title: "Wallet webservice", image: image1, image2x: image1_2x, technologies: "React, JavaScript, Node JS, Git", link: "https://ghostkato.github.io/project-group-3-js/"},
+        {title: "Wallet webservice", image: image1, image2x: image1_2x, technologies: "React, JavaScript, Node JS, Git", link: "https://www.apple.com/wallet/"},
         {title: "Green harvest webservice", image: image2, image2x: image2_2x, technologies: "React, JavaScript, Node JS, Git", link: "https://ghostkato.github.io/project-group-4-html-css/"},
-        {title: "English Exellence website", image: image3, image2x: image3_2x, technologies: "React, JavaScript, Node JS, Git", link: "https://ghostkato.github.io/project-group-3-js/"},
-        {title: "mimino website", image: image4, image2x: image4_2x, technologies: "React, JavaScript, Node JS, Git", link: "https://ghostkato.github.io/project-group-3-js/"},
-        {title: "power pulse webservice", image: image5, image2x: image5_2x, technologies: "React, JavaScript, Node JS, Git", link: "https://ghostkato.github.io/project-group-3-js/"},
-        {title: "chego jewelry website", image: image6, image2x: image6_2x, technologies: "React, JavaScript, Node JS, Git", link: "https://ghostkato.github.io/project-group-3-js/"},
+        {title: "English Exellence website", image: image3, image2x: image3_2x, technologies: "React, JavaScript, Node JS, Git", link: "https://www.icee-network.org/"},
+        {title: "mimino website", image: image4, image2x: image4_2x, technologies: "React, JavaScript, Node JS, Git", link: "https://grand-mimino.tbilisi-hotels.com/"},
+        {title: "power pulse webservice", image: image5, image2x: image5_2x, technologies: "React, JavaScript, Node JS, Git", link: "https://powerpulsemalta.com/"},
+        {title: "chego jewelry website", image: image6, image2x: image6_2x, technologies: "React, JavaScript, Node JS, Git", link: "https://erria.xyz/profile/chego-jewelry/"},
         {title: "energy flow webservice", image: image7, image2x: image7_2x, technologies: "React, JavaScript, Node JS, Git", link: "https://ghostkato.github.io/project-group-3-js/"},
         {title: "fruitbox online store", image: image8, image2x: image8_2x, technologies: "React, JavaScript, Node JS, Git", link: "https://ghostkato.github.io/project-group-3-js/"},
         {title: "vyshyvanka vibes Landing Page", image: image9, image2x: image9_2x, technologies: "React, JavaScript, Node JS, Git", link: "https://ghostkato.github.io/project-group-3-js/"},
