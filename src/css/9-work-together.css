@@ -192,14 +192,14 @@
 /* DESKTOP */
 
 @media screen and (min-width: 1280px) {
-  .work-together-container {
+  .work-benefits-container{
     background-image: url(../img/9-work-together/together-desktop.png);
   }
 
   @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .work-together-container {
+    .work-benefits-container {
       background-image: url(../img/9-work-together/together-desktop2x.png);
     }
   }
