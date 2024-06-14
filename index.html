@@ -15,7 +15,7 @@
     <script type="module" crossorigin src="/project-group-3-js/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/project-group-3-js/assets/vendor-17c7a8f5.js">
     <link rel="stylesheet" href="/project-group-3-js/assets/vendor-e5212ee8.css">
-    <link rel="stylesheet" href="/project-group-3-js/assets/index-dc40a53f.css">
+    <link rel="stylesheet" href="/project-group-3-js/assets/index-2271e6cb.css">
   </head>
   <body>
     <div class="scroll-to-top">
@@ -24,11 +24,29 @@
 
     <header class="header">
   <div class="header-container container">
-    <h2 class="header-title">header</h2>
-    <button id="toggle-night-mode">Нічний режим</button>
+    <nav class="header-navigation">
+      <a class="header-logo" href="">LLOYD<span class="logo-part">JEFFERSON.</span></a>
+      <ul class="navigation-list">
+        <li class="navigation-list-item"><a href="#about-me">About me</a></li>
+        <li class="navigation-list-item"><a href="#projects">Projects</a></li>
+        <li class="navigation-list-item"><a href="#contacts">Contacts</a></li>
+      </ul>
+    </nav>
+    <label class="theme-switch">
+      <input type="checkbox" id="toggle-night-mode">
+      <div class="toggle-slider">
+        <div class="toggle-circle"></div>
+        <div class="elipse"></div>
+      </div>
+    </label>
+    <a class="order-project" href="#work-together">Order the project</a>
+    <button class="menu-btn" type="button" data-menu-open>
+      <svg class="menu-icon">
+        <use class="menu-link" href="/project-group-3-js/assets/icons-d3b5bc4a.svg#icon-material-symbols-light_menu"></use>
+      </svg>
+    </button>
   </div>
 </header>
-
     <main>
       <section class="section">
   <div class="hero-container container">
