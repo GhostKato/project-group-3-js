@@ -1,16 +1,26 @@
 .about-me-container {
-  display: block;
-  width: 360px;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.about-title-container {
+  max-width: 100%;
 }
 
 .about-title {
-  text-align: left;
+  display: block;
   font-family: Impact;
   font-size: 52px;
   letter-spacing: 1.8px;
   line-height: 64px;
   text-transform: uppercase;
   margin-bottom: 40px;
+  width: 320px;
+  max-width: 100%;
 }
 
 .about-title-span {
@@ -22,18 +32,24 @@
   border-radius: 16px;
   overflow: hidden;
   position: relative;
-  width: 320px;
-  height: 374px;
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  margin-bottom: 40px;
 }
 
 .about-photo img {
-  position: absolute;
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
 }
+
 .about-bio-container {
-  width: 320px;
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  max-width: 320px;
 }
 
 .about-me-title {
@@ -44,6 +60,8 @@
   text-transform: uppercase;
   margin-bottom: 32px;
   padding-top: 40px;
+
+  width: 100%;
 }
 
 .about-bio-text {
@@ -51,10 +69,9 @@
   font-size: 16px;
   letter-spacing: 0.2px;
   line-height: 24px;
-}
-
-.about-bio-text:not(:last-child) {
   margin-bottom: 24px;
+
+  width: 100%;
 }
 
 .about-education-list,
@@ -65,6 +82,8 @@
   letter-spacing: 0.2px;
   line-height: 24px;
   padding-left: 20px;
+  width: 100%;
+  max-width: 320px;
 }
 
 .about-education-list::before,
@@ -121,42 +140,40 @@
 
 @media screen and (min-width: 768px) {
   .about-me-container {
+    flex-direction: row;
+    flex-wrap: wrap;
     align-content: center;
     max-width: 100%;
   }
 
   .about-photo {
     margin-top: 336px;
-    display: inline-block;
-    border-radius: 16px;
-    overflow: hidden;
-    width: 336px;
+    max-width: 336px;
     height: 392px;
   }
+
   .about-photo img {
     width: 336px;
     height: 392px;
     object-fit: cover;
     border-radius: 16px;
     margin-bottom: 40px;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
   }
 
   .about-bio-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 32px;
     margin-bottom: 40px;
-    width: 100%;
+    max-width: 100%;
   }
 
   .about-title {
     font-size: 108px;
     letter-spacing: 1.8px;
     line-height: 124px;
+    width: 768px;
   }
 
   .about-me-title {
@@ -164,10 +181,11 @@
     font-size: 36px;
     letter-spacing: 0.5px;
     line-height: 48px;
-    text-align: start;
+    text-align: left;
     margin-bottom: 32px;
     text-transform: uppercase;
     padding-top: 0;
+    width: 100%;
   }
 
   .about-bio-text {
@@ -197,12 +215,14 @@
 
   .about-me-portfolio {
     display: flex;
+    width: 704px;
   }
 
   .about-education-menu {
     padding-left: 10px;
     max-width: 320px;
   }
+
   @media screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx),
     screen and (min-device-pixel-ratio: 2) {
@@ -220,17 +240,23 @@
 }
 
 .about-education {
-  width: 384px;
+  width: 100%;
+  max-width: 384px;
 }
 
 .about-role {
-  width: 384px;
+  width: 100%;
+  max-width: 384px;
   margin-top: 0;
 }
 
 @media screen and (min-width: 1280px) {
+  .about-title {
+    width: 1280px;
+  }
   .about-bio-container {
     justify-content: end;
+    gap: 0;
   }
 
   .about-photo {
@@ -248,7 +274,8 @@
   }
 
   .about-bio-text {
-    width: 488px;
+    width: 100%;
+    max-width: 488px;
   }
 
   .about-bio::after {
@@ -258,11 +285,14 @@
   }
 
   .about-me-portfolio {
-    padding-left: 208px;
     gap: 0;
   }
 
   .about-education {
     margin-right: 136px;
+  }
+
+  .about-education-menu {
+    width: 384px;
   }
 }
