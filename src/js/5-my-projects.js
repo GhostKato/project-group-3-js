@@ -1,15 +1,15 @@
 document.addEventListener('DOMContentLoaded', function() {
     const projects = [
-        {title: "Wallet webservice", image: "/img/5-my-projects/image1.jpg", technologies: "React, JavaScript, Node JS, Git", link: "#"},
-        {title: "Green harvest webservice", image: "/img/5-my-projects/image2.jpg", technologies: "React, JavaScript, Node JS, Git", link: "#"},
-        {title: "English Exellence website", image: "/img/5-my-projects/image3.jpg", technologies: "React, JavaScript, Node JS, Git", link: "#"},
-        {title: "mimino website", image: "/img/5-my-projects/image4.jpg", technologies: "React, JavaScript, Node JS, Git", link: "#"},
-        {title: "power pulse webservice ", image: "/img/5-my-projects/image5.jpg", technologies: "React, JavaScript, Node JS, Git", link: "#"},
-        {title: "chego jewelry website", image: "/img/5-my-projects/image6.jpg", technologies: "React, JavaScript, Node JS, Git", link: "#"},
-        {title: "energy flow webservice", image: "/img/5-my-projects/image7.jpg", technologies: "React, JavaScript, Node JS, Git", link: "#"},
-        {title: "fruitbox online store", image: "/img/5-my-projects/image8.jpg", technologies: "React, JavaScript, Node JS, Git", link: "#"},
-        {title: "vyshyvanka vibes Landing Page", image: "/img/5-my-projects/image9.jpg", technologies: "React, JavaScript, Node JS, Git", link: "#"},
-        {title: "starlight studio landing page", image: "/img/5-my-projects/image10.jpg", technologies: "React, JavaScript, Node JS, Git", link: "#"}
+        {title: "Wallet webservice", image: "./img/5-my-projects/image1.jpg", image2x: "./img/5-my-projects/image1_2x.jpg", technologies: "React, JavaScript, Node JS, Git", link: "https://ghostkato.github.io/project-group-3-js/"},
+        {title: "Green harvest webservice", image: "./img/5-my-projects/image2.jpg", image2x: "./img/5-my-projects/image2_2x.jpg", technologies: "React, JavaScript, Node JS, Git", link: "https://ghostkato.github.io/project-group-4-html-css/"},
+        {title: "English Exellence website", image: "./img/5-my-projects/image3.jpg", image2x: "./img/5-my-projects/image3_2x.jpg", technologies: "React, JavaScript, Node JS, Git", link: "https://ghostkato.github.io/project-group-3-js/"},
+        {title: "mimino website", image: "./img/5-my-projects/image4.jpg", image2x: "./img/5-my-projects/image4_2x.jpg", technologies: "React, JavaScript, Node JS, Git", link: "https://ghostkato.github.io/project-group-3-js/"},
+        {title: "power pulse webservice ", image: "./img/5-my-projects/image5.jpg", image2x: "./img/5-my-projects/image5_2x.jpg", technologies: "React, JavaScript, Node JS, Git", link: "https://ghostkato.github.io/project-group-3-js/"},
+        {title: "chego jewelry website", image: "./img/5-my-projects/image6.jpg", image2x: "./img/5-my-projects/image6_2x.jpg", technologies: "React, JavaScript, Node JS, Git", link: "https://ghostkato.github.io/project-group-3-js/"},
+        {title: "energy flow webservice", image: "./img/5-my-projects/image7.jpg", image2x: "./img/5-my-projects/image7_2x.jpg", technologies: "React, JavaScript, Node JS, Git", link: "https://ghostkato.github.io/project-group-3-js/"},
+        {title: "fruitbox online store", image: "./img/5-my-projects/image8.jpg", image2x: "./img/5-my-projects/image8_2x.jpg", technologies: "React, JavaScript, Node JS, Git", link: "https://ghostkato.github.io/project-group-3-js/"},
+        {title: "vyshyvanka vibes Landing Page", image: "./img/5-my-projects/image9.jpg", image2x: "./img/5-my-projects/image9_2x.jpg", technologies: "React, JavaScript, Node JS, Git", link: "https://ghostkato.github.io/project-group-3-js/"},
+        {title: "starlight studio landing page", image: "./img/5-my-projects/image10.jpg", image2x: "./img/5-my-projects/image10_2x.jpg", technologies: "React, JavaScript, Node JS, Git", link: "https://ghostkato.github.io/project-group-3-js/"}
         
     ];
 
@@ -28,11 +28,17 @@ document.addEventListener('DOMContentLoaded', function() {
             const project = projects[currentIndex];
             const listItem = document.createElement('li');
             listItem.innerHTML = `
-                <img class="project-image" src="${project.image}" alt="${project.title}">
+                <picture>
+                    <source srcset="${project.image2x} 2x, ${project.image} 1x">
+                    <img class="project-image" src="${project.image}" alt="${project.title}">
+                </picture>
                 <div class="project-info">
                 <p class="project-technologies">${project.technologies}</p>
-                    <p class="project-title">${project.title}</p>
-                    <button class="project-link" onclick="window.open('${project.link}', '_blank')">VISIT</button>
+                    <div class="project-title-btn"><p class="project-title">${project.title}</p>
+                    <button class="project-btn" onclick="window.open('${project.link}', '_blank')">VISIT
+                    <svg class="arrow-up-right" width="14.5" height="14.5">
+                    <use href="./img/icons.svg#icon-visit"></use>
+                    </svg></button></div>
                 </div>
             `;
             projectList.appendChild(listItem);

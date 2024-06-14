@@ -1,7 +1,4 @@
-.my-projects-container {
-  color: #292929;
-  background-color: #F0F0F0;
-}
+.my-projects-container {}
 
 
 .my-projects-title {
@@ -71,9 +68,11 @@
 }
 
 
-.project-link {
+.project-btn {
   position: relative;
-  display: inline-block;
+  /* display: inline-block; */
+  display: flex;
+  align-items: center;
   padding: 10px 20px;
   margin-top: 10px;
   margin-bottom: 40px;
@@ -88,35 +87,26 @@
   transition: background-color 0.3s;
   float: right;
   border: none;
+  gap: 12px;
 }
 
-.project-link:hover {
-  background-color: ##BBBBBB;
+.project-btn:hover {
+  background-color: #BBB;
 }
 
-/* гребаная стрелка, только див удалила из js*/
-
-/* .projects-arrow-up-right {
-  position: absolute;
-    top: -10px;
-    right: -10px;
-    width: 20px;
-    height: 20px;
-    transform: rotate(90deg);
+.arrow-up-right {
+  stroke: #00B068;
 }
 
-.projects-arrow-up-right::before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  top: 13px;
-    left: 15px;
-    width: 18px;
-    height: 18px;
-  border-style: solid;
-  border-width: 3px 0px 0 0;
-  border-color: #00B068 transparent;
-} */
+.night-mode .project-btn {
+  background-color: #2A2D32;
+  color: #F0F0F0;
+}
+
+.night-mode .project-btn:hover {
+  background-color: #3B3F45;
+  color: #F0F0F0;
+}
 
 #load-more {
   display: block;
@@ -132,36 +122,86 @@
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-
-
 }
 
 #load-more:hover {
-  background-color: #555;
+  color: #00B068;
+}
+
+.night-mode #load-more {
+  background: #1E2023;
+  color: #F0F0F0;
+}
+
+
+
+.night-mode #load-more:hover {
+  color: #00B068;
 }
 
 .arrow-load-more {
   height: 0px;
-    width: 100%;
-    border-top: 2px solid #00B068;
-    transform: translateY(-50%) rotate(0deg);
+  width: 100%;
+  border-top: 2px solid #00B068;
+  transform: translateY(-50%) rotate(0deg);
 }
 
-/* 
-@media (min-width: 360px) {
-  .project-item {
-    width: calc(100% - 40px);
+
+@media screen and (min-width: 360px) {}
+
+
+
+
+/* TABLET */
+
+@media screen and (min-width: 768px) {
+  .my-projects-title {
+    font-size: 108px;
+    line-height: 1.14;
+    padding-bottom: 80px;
+  }
+
+  .project-title {
+    font-size: 36px;
+    line-height: 1.33;
+  }
+
+  .project-title-btn {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .project-btn {
+    margin-top: 0px;
+  }
+
+  #load-more {
+    font-size: 20px;
+    line-height: 1.6;
   }
 }
 
-@media (min-width: 768px) {
-  .project-item {
-    width: calc(50% - 40px);
+
+/* DESKTOP */
+
+@media screen and (min-width: 1280px) {
+  .my-projects-title {
+    font-size: 108px;
+    line-height: 1.14;
+    padding-bottom: 80px;
+  }
+
+  .project-title {
+    font-size: 36px;
+    line-height: 1.33;
+  }
+
+  .project-title-btn {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .project-btn {
+    margin-top: 0px;
   }
 }
-
-@media (min-width: 1280px) {
-  .project-item {
-    width: calc(33.333% - 40px);
-  }
-} */
