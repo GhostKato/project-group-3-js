@@ -18,6 +18,7 @@ import image9 from '/img/5-my-projects/image9.jpg';
 import image9_2x from '/img/5-my-projects/image9_2x.jpg';
 import image10 from '/img/5-my-projects/image10.jpg';
 import image10_2x from '/img/5-my-projects/image10_2x.jpg';
+import iconsSvgUrl from '/img/icons.svg';
 
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -59,8 +60,8 @@ document.addEventListener('DOMContentLoaded', function () {
                     <div class="project-title-btn"><p class="project-title">${project.title}</p>
                     <button class="project-btn" onclick="window.open('${project.link}', '_blank')">VISIT
                     <svg class="arrow-up-right" width="14.5" height="14.5">
-                    <use href="./img/icons.svg#icon-visit"></use>
-                    </svg></button></div>
+                        <use xlink:href="${iconsSvgUrl}#icon-visit"></use>
+                    </svg>
                 </div>
             `;
             projectList.appendChild(listItem);
