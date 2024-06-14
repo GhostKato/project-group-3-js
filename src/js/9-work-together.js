@@ -4,8 +4,12 @@ const body = document.body;
 const form = document.querySelector('.together-form');
 const modal = document.getElementById('together-modal');
 const closeButton = document.querySelector('.together-modal-close');
-const error = document.querySelector('.together-error');
-const ok = document.querySelector('.together-ok');
+
+const errorText = document.querySelector('.together-text-error');
+const errorInput = document.querySelector('.together-input-error')
+
+const okIcon = document.querySelector('.together-icon-ok');
+const okInput =document.querySelector('.together-input-ok')
 
 const togetherHtml = `
     <div id="together-modal" class="together-modal";">
@@ -32,15 +36,15 @@ form.addEventListener('submit', async (event) => {
         const response = await axios.post('https://portfolio-js.b.goit.study/api/requests', formData);
 
         if (response.status === 200) {
-            error.style.display = 'none';
+            errorText.style.display = 'none';
             modal.style.display = 'flex';
-            ok.style.display = 'block';
+            okIcon.style.display = 'block';
             form.reset();
         } else {
-            error.style.display = 'block';            
+            errorText.style.display = 'block';            
         }
     } catch (err) {
-        error.style.display = 'block'; 
+        errorText.style.display = 'block'; 
         
     }
 });
