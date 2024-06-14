@@ -50,13 +50,16 @@
 
       <!-- Form -->
       <form class="together-form">
-        <label>
+        <label class="position-together-error">
+          <div class="together-ok"></div>
           <input
             class="together-email"
             type="email"
             name="email"
             placeholder="Your email*"
+            pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
           />
+          <p class="together-error">Invalid name, try again</p>
         </label>
         <label>
           <textarea class="together-text" placeholder="Message"></textarea>
