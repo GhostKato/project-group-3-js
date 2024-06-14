@@ -125,7 +125,17 @@ li > .text-last {
     margin-bottom: 0;
   }
 
-  .flex-wrap {
+  .benefits {
     position: relative;
+    background-image: url(../img/6-benefits/decor\ bg\ 31x.png); 
+    background-repeat: no-repeat;
+    background-position: right top;
+  } 
   }
-}
+  @media screen and (min-device-pixel-ratio: 2), 
+    (min-resolution: 192dpi), 
+    (min-resolution: 2dppx) { 
+    .benefits  { 
+      background-image: url(../img/6-benefits/decor\ bg\ 32x.png); 
+    } 
+  } 
