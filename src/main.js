@@ -6,6 +6,7 @@ import './js/5-my-projects';
 import './js/6-benefits';
 import './js/7-faq';
 import './js/8-reviews';
+import './js/8-reviews2';
 import './js/9-work-together';
 import './js/10-footer';
 import './js/11-modal-window';
