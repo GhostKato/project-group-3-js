@@ -321,6 +321,10 @@
   background-color: #14c57c;
 }
 
+.night-mode .together-button:hover {
+  background-color: #009156;
+}
+
 .night-mode .together-email {
   background-color: #2a2d32;
   color: #f0f0f0;
