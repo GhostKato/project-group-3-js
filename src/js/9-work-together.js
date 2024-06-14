@@ -1,6 +1,7 @@
 import axios from "axios";
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
+import iconsSvgUrl from '../img/icons.svg';
 
 const body = document.body;
 
@@ -9,7 +10,7 @@ const togetherHtml = `
         <div class="together-modal-content">
             <button class="together-modal-close">
                 <svg class="together-modal-svg" width="24" height="24">
-                    <use href="./img/icons.svg#icon-x"></use>
+                    <use href="${iconsSvgUrl}#icon-x"></use>
                 </svg>
             </button>
             <h3 class="together-modal-title">Thank you for your interest in cooperation!</h3>
