@@ -361,16 +361,15 @@
 .together-icon-ok {
   display: none;
   position: absolute;
-  width: 16px;
-  height: 16px;
-  background-color: #00b068;
-  border-radius: 50%;
   top: 16px;
   right: 16px;
+  stroke: #fff;
+  fill: #00b068;
 }
 
 .night-mode .together-icon-ok {
-  background-color: #14c57c;
+  stroke: #fff;
+  fill: #14c57c;
 }
 
 .together-input-ok {
