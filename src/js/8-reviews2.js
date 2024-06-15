@@ -6,7 +6,7 @@ import 'swiper/css/bundle';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 
-const review = document.querySelector('.reviews');
+const review = document.querySelector('.reviews-list');
 
 async function fetchReviews() {
   const url = 'https://portfolio-js.b.goit.study/api/reviews';
@@ -26,8 +26,10 @@ async function renderReviews() {
         return `
         <li class='reviews-item swiper-slide' id='${reviews._id}'>
         <p class='author-review'>${reviews.review}</p>
-  <img class='reviews-photo' src="${reviews.avatar_url}" alt="author_photo">
-  <h3 class='author-name'>${reviews.author}</h3>
+  <div class='author-info'>
+    <img class='reviews-photo' src="${reviews.avatar_url}" alt="author_photo">
+    <h3 class='author-name'>${reviews.author}</h3>
+  </div>
   
 </li>`;
       })
@@ -35,7 +37,7 @@ async function renderReviews() {
 
     review.insertAdjacentHTML('beforeend', reviewElements);
 
-    const swiper = new Swiper('.review', {
+    const swiper = new Swiper('.review-swiper', {
       watchOverflow: true,
       keyboard: true,
       navigation: {

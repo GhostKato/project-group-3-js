@@ -1,54 +1,115 @@
-.reviews-container {
+.rewiev-container {
+  max-width: 360px;
 }
 
-.reviews-title {
+.title-review {
   font-family: Impact;
   font-size: 52px;
-  font-style: normal;
   font-weight: 400;
   line-height: 1.23;
-  letter-spacing: 0.035em;
+  letter-spacing: 0.0346em;
   text-transform: uppercase;
+  text-align: center;
+
+  margin-bottom: 40px;
 }
-.reviews {
-  margin-top: 40px;
+
+.reviews-photo {
+  width: 40px;
+  height: 40px;
+  border-radius: 24px;
+  background: url(<path-to-image>) lightgray 50% / cover no-repeat, #797979;
+}
+
+.reviews-item {
+  padding: 32px;
+  border-radius: 16px;
+  background: var(--Light-grey, #e4e5e6);
+}
+
+.author-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+}
+
+.author-name {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.03125em;
+}
+
+.author-review {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0.03125em;
   margin-bottom: 24px;
 }
-.btn-container {
+
+.left-btn {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid rgba(41, 41, 41, 0.3);
+}
+
+.right-btn {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid rgba(41, 41, 41, 0.3);
+}
+
+.review-btn-container {
   display: flex;
   justify-content: flex-end;
   gap: 20px;
 }
-.swipe-left-btn {
-  display: flex;
-  width: 40px;
-  height: 40px;
-  justify-content: center;
-  align-items: center;
-}
-.swipe-right-btn {
-  display: flex;
-  width: 40px;
-  height: 40px;
-  justify-content: center;
-  align-items: center;
+
+.review-swiper {
+  height: 302px;
+  margin-bottom: 32px;
 }
 
-.swipe-right-icon {
+.swiper-button-disabled {
+  opacity: 0.5;
+}
+
+.menu-left-btn-icon {
   fill: transparent;
   stroke: black;
 }
 
-.swipe-left-icon {
+.menu-right-btn-icon {
   fill: transparent;
   stroke: black;
 }
 
-@media screen and (min-width: 360px) {
+.night-mode .left-btn {
+  background-color: transparent;
+  border: 1px solid #2a2d32;
 }
-
-@media screen and (min-width: 768px) {
+.night-mode .right-btn {
+  background-color: transparent;
+  border: 1px solid #2a2d32;
 }
-
-@media screen and (min-width: 1280px) {
+.night-mode .menu-left-btn-icon {
+  stroke: #f0f0f0;
+}
+.night-mode .menu-right-btn-icon {
+  stroke: #f0f0f0;
+}
+.night-mode .reviews-item {
+  background: #2a2d32;
+}
+.night-mode {
 }
