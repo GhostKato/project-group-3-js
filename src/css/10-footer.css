@@ -1,41 +1,44 @@
 /* PHONE */
-#footer {
-  opacity: 0;
-  transform: translateY(50px);
-  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-}
-
-#footer.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
 
 .footer-container {
   padding: 40px 0 24px 0;
+  /* border-top: 1px solid var(--Light-grey, #E4E5E6); */
+}
+
+.border-top {
   border-top: 1px solid var(--Light-grey, #E4E5E6);
 }
 
 .footer-title {
-  color: var(--Accet-green, #00B068);
+  color: var(--Black, #292929);
   font-family: Impact;
   font-size: 32px;
   font-weight: 400;
   line-height: 1;
   letter-spacing: 0.046em;
   text-transform: uppercase;
-  margin-bottom: 32px;
 }
+
+.night-mode .footer-title {
+  color: #F0F0F0;
+}
+
+
 .footer-title-color {
-  color: var(--Black, #292929);
+  color: var(--Accet-green, #00B068);
   font-family: Impact;
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
-  line-height: 1; 
+  line-height: 1;
   letter-spacing: 0.046em;
   text-transform: uppercase;
 }
+
+.night-mode .footer-title-color {
+  color: #14C57C;
+}
+
 .footer-media-list {
   margin-bottom: 40px;
   display: flex;
@@ -43,9 +46,6 @@
   gap: 24px;
 }
 
-
-.footer-media-item {
-}
 .footer-media-link {
   color: var(--Black, #292929);
   font-family: Poppins;
@@ -54,10 +54,21 @@
   font-weight: 300;
   line-height: 1.5;
   letter-spacing: 0.031em;
+  transition: color 0.3s ease;
 }
 
-.footer-media-link:hover {
+.night-mode .footer-media-link {
+  color: #F0F0F0;
+}
+
+.footer-media-link:hover,
+.footer-media-link:focus {
   color: var(--Accet-green, #00B068);
+}
+
+.night-mode .footer-media-link:hover,
+.footer-media-link:focus {
+  color: #14C57C;
 }
 
 .footer-paragraph {
@@ -70,6 +81,16 @@
   letter-spacing: 0.031em;
   display: flex;
   align-items: center;
+  flex-direction: column;
+}
+
+.night-mode .footer-paragraph {
+  color: #F0F0F0;
+}
+
+.footer-title-container {
+  gap: 32px;
+  display: flex;
   flex-direction: column;
 }
 
@@ -94,5 +115,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 0;
   }
 }
