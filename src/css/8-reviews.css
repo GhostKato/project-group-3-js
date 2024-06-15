@@ -1,13 +1,148 @@
-.reviews-container {
-  background-color: aqua;
-  color: rgb(79, 118, 35);
+
+.SectionReviews {
+  padding: 80px 0;
 }
 
-@media screen and (min-width: 360px) {
+.TitleText {
+  font-family: 'Impact';
+  font-size: 52px;
+  line-height: 1.23;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.reviews-swiper {
+  margin-bottom: 40px;
+}
+
+.reviews-List {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.reviews-list-item {
+  width: 100%;
+  padding: 32px;
+  gap: 24px;
+  border-radius: 16px;
+  background-color: #e4e5e6;
+}
+
+.ReviewText {
+  font-family: 'Poppins';
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.Review {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.UserIcon {
+ gap: 0px;
+ border-radius: 24px;
+}
+
+.Name {
+  font-weight: bold;
+font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+
+.ArrowNav {
+  display: flex;
+  justify-content: right;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+
+.ButtonNext {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  gap: 10px;
+  border-radius: 8px;
+  border: 1px solid #2929294d;
+  background-color: #e9e9ed;
+}
+
+.ButtonPrev {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #2929294d;
+}
+
+.SocialIconBack
+{
+  width: 24px;
+  height: 24px;
+  fill: #292929;
 }
 
 @media screen and (min-width: 768px) {
+  .reviews {
+    padding-bottom: 0;
+  }
+.TitleText {
+  font-size: 108px;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+    margin-bottom: 60px;
+}
+   
+
+.reviews-item {
+    max-width: 640px;
+    margin-bottom: 27px;
+  }
+
+}
+@media screen and (min-width: 1280px) {
+
+  .TitleText {
+    margin-bottom: 80px;
+  }
+
+  .reviews-item {
+    max-width: 528px;
+    height: 96px;
+  }
 }
 
-@media screen and (min-width: 1280px) {
+.ArrowNav {
+  padding-right: 0;
+  gap: 24px;
+}
+
+.ButtonNext {
+  width: 48px;
+  height: 48px;
+}
+
+.ButtonPrev {
+ width: 48px;
+ height: 48px;
+}
+.ButtonNext.swiper-button-disabled,
+.ButtonPrev.swiper-button-disabled {
+  opacity: 0.35;
+  cursor: auto;
+  pointer-events: none;
 }
