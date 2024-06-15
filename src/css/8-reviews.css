@@ -1,6 +1,47 @@
 .reviews-container {
-  background-color: aqua;
-  color: rgb(79, 118, 35);
+}
+
+.reviews-title {
+  font-family: Impact;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.23;
+  letter-spacing: 0.035em;
+  text-transform: uppercase;
+}
+.reviews {
+  margin-top: 40px;
+  margin-bottom: 24px;
+}
+.btn-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+.swipe-left-btn {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+}
+.swipe-right-btn {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.swipe-right-icon {
+  fill: transparent;
+  stroke: black;
+}
+
+.swipe-left-icon {
+  fill: transparent;
+  stroke: black;
 }
 
 @media screen and (min-width: 360px) {
