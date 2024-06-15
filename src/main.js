@@ -10,4 +10,4 @@ import './js/8-reviews2';
 import './js/9-work-together';
 import './js/10-footer';
 import './js/11-modal-window';
-import './js/scroll-to-top';
+

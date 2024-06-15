@@ -60,6 +60,7 @@
   line-height: 1.5;
   letter-spacing: 0.003em;
   margin-left: 40px;
+  transition: color 0.3s ease;
 }
 
 .together-contacts-link:hover {
@@ -80,6 +81,7 @@
   border-radius: 8px;
   border: none;
   background: #e4e5e6;
+  transition: outline 0.1s ease;
 }
 
 .together-email:focus {
@@ -94,6 +96,7 @@
   border: none;
   background: #e4e5e6;
   resize: none;
+  transition: outline 0.1s ease;
 }
 
 .together-text:focus {
@@ -128,6 +131,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #f0f0f0;
+  transition: background 0.3s ease;
 }
 
 .together-button:hover {
