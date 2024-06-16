@@ -40,6 +40,7 @@
   gap: 24px;
   border-radius: 16px;
   background-color: rgba(0, 176, 104, 0.2);
+  transition: background-color 1s ease;
 }
 
 .accordion-header {
@@ -126,18 +127,19 @@
 
 @media screen and (min-width: 1280px) {
   .faq-container {
-    display: flex;
-    gap: 104px;
-    max-width: 100%;
     background-image: url(../img/7-faq/faq-background-1x.png);
     background-position: left bottom;
     background-repeat: no-repeat;
     background-size: auto;
-    z-index: 0;
+  }
+
+  .faq-container {
+    display: flex;
+    gap: 104px;
+    max-width: 100%;
   }
 
   .accordion-container {
-    z-index: 1;
     margin-top: 276px;
   }
 
