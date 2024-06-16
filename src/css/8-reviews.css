@@ -25,6 +25,7 @@
   padding: 32px;
   border-radius: 16px;
   background: var(--Light-grey, #e4e5e6);
+  margin-bottom: 24px;
 }
 
 .author-info {
@@ -34,7 +35,10 @@
   gap: 16px;
 }
 
-.author-name {
+.reviews-list {
+}
+
+.reviews-list .author-name {
   font-size: 16px;
   font-weight: 600;
   line-height: 1.5;
@@ -47,6 +51,11 @@
   line-height: 1.5;
   letter-spacing: 0.03125em;
   margin-bottom: 24px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 7;
+  -webkit-box-orient: vertical;
 }
 
 .left-btn {
@@ -57,6 +66,7 @@
   align-items: center;
   border-radius: 8px;
   border: 1px solid rgba(41, 41, 41, 0.3);
+  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .right-btn {
@@ -67,6 +77,7 @@
   align-items: center;
   border-radius: 8px;
   border: 1px solid rgba(41, 41, 41, 0.3);
+  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .review-btn-container {
@@ -75,9 +86,13 @@
   gap: 20px;
 }
 
+.rewiev-space {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .review-swiper {
-  height: 302px;
-  margin-bottom: 32px;
 }
 
 .swiper-button-disabled {
@@ -94,6 +109,13 @@
   stroke: black;
 }
 
+.left-btn:hover {
+  background-color: var(--Light-grey, #e4e5e6);
+}
+.right-btn:hover {
+  background-color: var(--Light-grey, #e4e5e6);
+}
+
 .night-mode .left-btn {
   background-color: transparent;
   border: 1px solid #2a2d32;
@@ -101,6 +123,14 @@
 .night-mode .right-btn {
   background-color: transparent;
   border: 1px solid #2a2d32;
+}
+
+.night-mode .left-btn:hover {
+  background-color: #3b3f45;
+}
+
+.night-mode .right-btn:hover {
+  background-color: #3b3f45;
 }
 .night-mode .menu-left-btn-icon {
   stroke: #f0f0f0;
@@ -112,4 +142,36 @@
   background: #2a2d32;
 }
 .night-mode {
+}
+
+@media screen and (min-width: 360px) {
+}
+
+@media screen and (min-width: 768px) {
+  .rewiev-container {
+    max-width: 704px;
+  }
+  .reviews-item {
+  }
+
+  .title-review {
+    font-size: 108px;
+    line-height: 1.15;
+    letter-spacing: 0.0166em;
+    margin-bottom: 60px;
+  }
+
+  .author-review {
+    -webkit-line-clamp: 3;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .rewiev-container {
+    max-width: 1280px;
+  }
+
+  ..title-review {
+    margin-bottom: 80px;
+  }
 }

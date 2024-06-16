@@ -6,6 +6,13 @@ import 'swiper/css/bundle';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+document.addEventListener('DOMContentLoaded', () => {
+    AOS.init();
+});
+
 const review = document.querySelector('.reviews-list');
 
 async function fetchReviews() {
@@ -25,11 +32,13 @@ async function renderReviews() {
       .map(reviews => {
         return `
         <li class='reviews-item swiper-slide' id='${reviews._id}'>
-        <p class='author-review'>${reviews.review}</p>
-  <div class='author-info'>
-    <img class='reviews-photo' src="${reviews.avatar_url}" alt="author_photo">
-    <h3 class='author-name'>${reviews.author}</h3>
-  </div>
+        
+          <p class='author-review'>${reviews.review}</p>
+    <div class='author-info'>
+      <img class='reviews-photo' src="${reviews.avatar_url}" alt="author_photo">
+      <h3 class='author-name'>${reviews.author}</h3>
+  
+        </div>
   
 </li>`;
       })
@@ -48,14 +57,25 @@ async function renderReviews() {
       direction: 'horizontal',
       slidesPerView: 1,
       breakpoints: {
-        768: {
-          slidesPerView: 2,
+
+        320: {
+          slidesPerView: 1,
           spaceBetween: 16,
         },
 
-        1440: {
-          slidesPerView: 4,
+        360: {
+          slidesPerView: 1,
           spaceBetween: 16,
+        },
+
+        768: {
+          slidesPerView: 1,
+          spaceBetween: 16,
+        },
+
+        1280: {
+          slidesPerView: 2,
+          spaceBetween: 32,
         },
       },
     });
