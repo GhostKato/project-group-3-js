@@ -1,15 +1,14 @@
 .faq-container {
-  max-width: 360px;
+  max-width: 100%;
 }
 
 .section-title {
-  width: 320px;
   font-family: Impact;
   font-size: 52px;
   font-style: normal;
   font-weight: 400;
-  line-height: 64px;
-  letter-spacing: 1.8px;
+  line-height: 1.23em;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 40px;
 }
@@ -27,17 +26,17 @@
 .accordion-item {
   display: flex;
   padding: 28px 24px;
-  justify-content: flex-end;
-  align-items: flex-start;
   border-bottom: 1px solid #ccc;
   cursor: pointer;
+}
+
+.accordion-item:has(+ .accordion-item.active) {
+  border-bottom: none;
 }
 
 .active {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
   gap: 24px;
   border-radius: 16px;
   background-color: rgba(0, 176, 104, 0.2);
@@ -45,20 +44,18 @@
 
 .accordion-header {
   display: flex;
-  align-items: flex-start;
   gap: 16px;
   align-self: stretch;
 }
 
 .header {
-  width: 224px;
-  color: var(--Black, #292929);
+  width: 100%;
   font-family: Poppins;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 28px;
-  letter-spacing: 0.5px;
+  line-height: 1.5em;
+  letter-spacing: 0.027em;
   text-transform: uppercase;
 }
 
@@ -73,17 +70,30 @@
 }
 
 .accordion-content {
-  color: var(--Black, #292929);
   font-family: Poppins;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
-  line-height: 24px;
-  letter-spacing: 0.5px;
+  line-height: 1.5em;
+  letter-spacing: 0.03em;
 }
 
 .accordion-hover {
   display: none;
+}
+
+/*night mode*/
+
+.night-mode .active {
+  background-color: #204136;
+}
+
+.night-mode .arrow-icon {
+  stroke: #f0f0f0;
+}
+
+.night-mode .accordion-item {
+  border-bottom: 1px solid #2a2d32;
 }
 
 @media screen and (min-width: 768px) {
@@ -94,20 +104,23 @@
   .section-title {
     width: 592px;
     font-size: 108px;
-    line-height: 124px;
+    line-height: 1.14em;
     margin-bottom: 60px;
   }
 
   .accordion-item {
-    width: 704px;
+    width: 100%;
   }
 
   .accordion-header {
+    width: 100%;
     gap: 24px;
   }
 
   .header {
-    width: 600px;
+    font-size: 20px;
+    line-height: 1.6em;
+    letter-spacing: 0.025em;
   }
 }
 
@@ -115,21 +128,23 @@
   .faq-container {
     display: flex;
     gap: 104px;
-    max-width: 1280px;
+    max-width: 100%;
     background-image: url(../img/7-faq/faq-background-1x.png);
     background-position: left bottom;
     background-repeat: no-repeat;
     background-size: auto;
+    z-index: 0;
   }
 
   .accordion-container {
+    z-index: 1;
     margin-top: 276px;
   }
 
   .section-title {
     width: 520px;
     font-size: 108px;
-    line-height: 124px;
+    line-height: 1.14em;
     margin-bottom: 60px;
   }
 
@@ -148,6 +163,7 @@
       background-image: url(../img/7-faq/faq-background-2x.png);
       background-position: left bottom;
       background-repeat: no-repeat;
+      background-size: auto;
     }
   }
 }
