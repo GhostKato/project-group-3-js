@@ -48,7 +48,7 @@
   align-self: stretch;
 }
 
-.header {
+.faq-header {
   width: 100%;
   font-family: Poppins;
   font-size: 18px;
@@ -117,7 +117,7 @@
     gap: 24px;
   }
 
-  .header {
+  .faq-header {
     font-size: 20px;
     line-height: 1.6em;
     letter-spacing: 0.025em;
@@ -152,7 +152,7 @@
     width: 592px;
   }
 
-  .header {
+  .faq-header {
     width: 488px;
   }
 
