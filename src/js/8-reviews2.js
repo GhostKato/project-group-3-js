@@ -9,8 +9,10 @@ import 'izitoast/dist/css/iziToast.min.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-document.addEventListener('DOMContentLoaded', () => {
-    AOS.init();
+document.addEventListener('DOMContentLoaded', () => { 
+  AOS.init({ 
+      offset: 15, 
+    }); 
 });
 
 const review = document.querySelector('.reviews-list');
@@ -31,7 +33,7 @@ async function renderReviews() {
     const reviewElements = data
       .map(reviews => {
         return `
-        <li class='reviews-item swiper-slide' id='${reviews._id}'>
+        <li class='reviews-item swiper-slide' data-aos='fade-right' id='${reviews._id}'>
         
           <p class='author-review'>${reviews.review}</p>
     <div class='author-info'>

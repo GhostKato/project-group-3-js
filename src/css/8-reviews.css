@@ -1,5 +1,6 @@
 .rewiev-container {
   max-width: 360px;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
 }
 
 .title-review {
@@ -10,8 +11,11 @@
   letter-spacing: 0.0346em;
   text-transform: uppercase;
   text-align: center;
-
+  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
   margin-bottom: 40px;
+}
+
+.swiper-slide {
 }
 
 .reviews-photo {
@@ -22,10 +26,14 @@
 }
 
 .reviews-item {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 32px;
   border-radius: 16px;
   background: var(--Light-grey, #e4e5e6);
   margin-bottom: 24px;
+  min-height: 296px;
 }
 
 .author-info {
@@ -38,11 +46,12 @@
 .reviews-list {
 }
 
-.reviews-list .author-name {
+.author-name {
   font-size: 16px;
   font-weight: 600;
   line-height: 1.5;
   letter-spacing: 0.03125em;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .author-review {
@@ -56,6 +65,16 @@
   display: -webkit-box;
   -webkit-line-clamp: 7;
   -webkit-box-orient: vertical;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.review-btn-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.buttons {
 }
 
 .left-btn {
@@ -67,6 +86,7 @@
   border-radius: 8px;
   border: 1px solid rgba(41, 41, 41, 0.3);
   transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
 }
 
 .right-btn {
@@ -78,12 +98,7 @@
   border-radius: 8px;
   border: 1px solid rgba(41, 41, 41, 0.3);
   transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.review-btn-container {
-  display: flex;
-  justify-content: flex-end;
-  gap: 20px;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
 }
 
 .rewiev-space {
@@ -119,10 +134,12 @@
 .night-mode .left-btn {
   background-color: transparent;
   border: 1px solid #2a2d32;
+  box-shadow: 5px 5px 5px rgba(87, 84, 84, 0.5);
 }
 .night-mode .right-btn {
   background-color: transparent;
   border: 1px solid #2a2d32;
+  box-shadow: 5px 5px 5px rgba(87, 84, 84, 0.5);
 }
 
 .night-mode .left-btn:hover {
@@ -140,8 +157,22 @@
 }
 .night-mode .reviews-item {
   background: #2a2d32;
+  box-shadow: 5px 5px 5px rgba(87, 84, 84, 0.5);
 }
-.night-mode {
+.night-mode .title-review {
+  text-shadow: 5px 5px 5px rgba(255, 255, 255, 0.5);
+}
+
+.night-mode .author-review {
+  text-shadow: 5px 5px 5px rgba(255, 255, 255, 0.5);
+}
+
+.night-mode .rewiev-container {
+  box-shadow: 5px 5px 5px rgba(87, 84, 84, 0.5);
+}
+
+.night-mode .author-name {
+  text-shadow: 5px 5px 5px rgba(255, 255, 255, 0.5);
 }
 
 @media screen and (min-width: 360px) {
@@ -152,6 +183,7 @@
     max-width: 704px;
   }
   .reviews-item {
+    min-height: 224px;
   }
 
   .title-review {
@@ -162,7 +194,7 @@
   }
 
   .author-review {
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 4;
   }
 }
 
