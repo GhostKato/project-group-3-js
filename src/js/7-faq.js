@@ -1,7 +1,8 @@
 import Accordion from 'accordion-js';
+import 'accordion-js/dist/accordion.min.css';
 
 new Accordion('.accordion-container', {
-  duration: 400,
+  duration: 1000,
   showMultiple: false,
   openOnInit: [0],
 });
