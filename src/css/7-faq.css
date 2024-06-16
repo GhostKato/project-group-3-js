@@ -126,8 +126,8 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .faq-section {
-    background-image: url(./img/7-faq/faq-background-1x.png);
+  .faq-container {
+    background-image: url(../img/7-faq/faq-background-1x.png);
     background-position: left bottom;
     background-repeat: no-repeat;
     background-size: auto;
@@ -162,7 +162,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .faq-container {
-      background-image: url(./img/7-faq/faq-background-2x.png);
+      background-image: url(../img/7-faq/faq-background-2x.png);
       background-position: left bottom;
       background-repeat: no-repeat;
       background-size: auto;
