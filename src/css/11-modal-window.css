@@ -1,4 +1,4 @@
-.mobile-wraper {
+.mobile-wrapper {
   position: fixed;
   display: flex;
   top: 0;
@@ -222,7 +222,7 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .mobile-wraper {
+  .mobile-wrapper {
     display: none;
   }
 }

@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 function toggleModal() {
                     refs.modal.classList.toggle("is-open");
+                    checkDisplay();
                 }
             }
 
@@ -74,4 +75,22 @@ document.addEventListener('DOMContentLoaded', function() {
                     });
                 });
             }
+
+            
+            function checkDisplay() {
+                const mobileWrapper = document.querySelector('.mobile-wrapper');
+                const main = document.querySelector('main');
+
+                if (mobileWrapper && window.innerWidth < 768 && mobileWrapper.classList.contains('is-open')) {
+                    main.style.display = 'none';
+                } else {
+                    main.style.display = 'block';
+                }
+            }
+
+            
+            checkDisplay();
+
+            
+            window.addEventListener('resize', checkDisplay);
         });
