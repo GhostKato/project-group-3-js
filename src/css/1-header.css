@@ -70,6 +70,7 @@
 
 .night-mode .menu-icon {
   fill: #f0f0f0;
+  box-shadow: none;
 }
 
 .menu-icon:hover {
@@ -103,6 +104,10 @@
   transition: background-color 0.3s;
   border-radius: 30px;
   box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.night-mode .toggle-slider {
+  box-shadow: none;
 }
 
 .toggle-slider .toggle-circle {
@@ -145,25 +150,6 @@
 
 .order-project {
   display: none;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-}
-
-.night-mode .header-logo {
-  text-shadow: 5px 5px 5px rgba(255, 255, 255, 0.5);
-}
-
-.night-mode .toggle-slider {
-  box-shadow: 5px 5px 5px rgba(87, 84, 84, 0.5);
-}
-.night-mode .navigation-list-item {
-  text-shadow: 5px 5px 5px rgba(255, 255, 255, 0.5);
-}
-.night-mode .order-project {
-  box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.5);
-}
-
-.night-mode .menu-icon {
-  box-shadow: 5px 5px 5px rgba(87, 84, 84, 0.5);
 }
 
 @media screen and (max-width: 360px) {

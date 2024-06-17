@@ -31,7 +31,6 @@
   padding: 32px;
   border-radius: 16px;
   background: var(--Light-grey, #e4e5e6);
-  margin-bottom: 24px;
   min-height: 296px;
 }
 
@@ -107,6 +106,7 @@
 }
 
 .review-swiper {
+  margin-bottom: 24px;
 }
 
 .swiper-button-disabled {
@@ -133,12 +133,12 @@
 .night-mode .left-btn {
   background-color: transparent;
   border: 1px solid #2a2d32;
-  box-shadow: 5px 5px 5px rgba(87, 84, 84, 0.5);
+  box-shadow: none;
 }
 .night-mode .right-btn {
   background-color: transparent;
   border: 1px solid #2a2d32;
-  box-shadow: 5px 5px 5px rgba(87, 84, 84, 0.5);
+  box-shadow: none;
 }
 
 .night-mode .left-btn:hover {
@@ -156,18 +156,6 @@
 }
 .night-mode .reviews-item {
   background: #2a2d32;
-  box-shadow: 5px 5px 5px rgba(87, 84, 84, 0.5);
-}
-.night-mode .title-review {
-  text-shadow: 5px 5px 5px rgba(255, 255, 255, 0.5);
-}
-
-.night-mode .author-review {
-  text-shadow: 5px 5px 5px rgba(255, 255, 255, 0.5);
-}
-
-.night-mode .author-name {
-  text-shadow: 5px 5px 5px rgba(255, 255, 255, 0.5);
 }
 
 @media screen and (min-width: 360px) {
