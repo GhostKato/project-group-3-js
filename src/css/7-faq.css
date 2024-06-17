@@ -11,6 +11,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 40px;
+  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
 .coloured {
@@ -47,6 +48,7 @@
   display: flex;
   gap: 16px;
   align-self: stretch;
+  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
 .faq-header {
@@ -77,6 +79,7 @@
   font-weight: 300;
   line-height: 1.5em;
   letter-spacing: 0.03em;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .accordion-hover {
@@ -87,6 +90,18 @@
 
 .night-mode .active {
   background-color: #204136;
+}
+
+.night-mode .section-title {
+  text-shadow: 5px 5px 5px rgba(255, 255, 255, 0.5);
+}
+
+.night-mode .accordion-header {
+  text-shadow: 5px 5px 5px rgba(255, 255, 255, 0.5);
+}
+
+.night-mode .accordion-content {
+  text-shadow: 5px 5px 5px rgba(255, 255, 255, 0.5);
 }
 
 .night-mode .arrow-icon {
