@@ -13,7 +13,6 @@
   line-height: 1;
   letter-spacing: 0.0625em;
   text-transform: uppercase;
-  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 .logo-part {
   color: var(--Accet-green, #00b068);
@@ -41,7 +40,6 @@
   letter-spacing: 0.5px;
   white-space: nowrap;
   transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
-  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .menu-btn {
@@ -65,12 +63,10 @@
   width: 32px;
   height: 32px;
   transition: stroke 300ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
 }
 
 .night-mode .menu-icon {
   fill: #f0f0f0;
-  box-shadow: none;
 }
 
 .menu-icon:hover {
@@ -103,7 +99,6 @@
   background-color: #e4e5e6;
   transition: background-color 0.3s;
   border-radius: 30px;
-  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
 }
 
 .night-mode .toggle-slider {
