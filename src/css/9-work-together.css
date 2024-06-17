@@ -250,6 +250,7 @@
   .together-form {
     margin-bottom: 164px;
     flex-grow: 1;
+    position: relative;
   }
 }
 
@@ -402,10 +403,6 @@
 }
 
 /* ERRORS */
-
-.position-together-error {
-  position: relative;
-}
 
 .together-text-error {
   display: none;
