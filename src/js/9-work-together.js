@@ -7,10 +7,10 @@ const modal = document.getElementById('together-modal');
 const closeButton = document.querySelector('.together-modal-close');
 
 const errorText = document.querySelector('.together-text-error');
-const errorInput = document.querySelector('.together-input-error');
+
 
 const okIcon = document.querySelector('.together-icon-ok');
-const okInput = document.querySelector('.together-input-ok');
+
 
 const text = document.querySelector('.together-text');
 
