@@ -1,69 +1,75 @@
-#hero {
-  padding-top: 80px;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.hero-container {
-  color: white;
-  margin: 0 auto;
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+#hero {
+  padding-top: 80px;
+  width: 100%;
 }
 
 .hero-position {
   display: flex;
   flex-direction: column;
+  background: url(../img/2-hero/hero-background-mobile.png),
+    url(../img/2-hero/hero-background-mobile-2x.png) no-repeat;
+    background-size:contain;
+    background-position: top;
+    background-repeat: no-repeat;
+  color: white;
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 100%;
 }
 
 .hero-title {
-  color: var(--Black, #292929);
+  color: var(--Accet-green, #00b068);
   font-family: Impact;
   font-size: 64px;
   font-weight: 400;
-  line-height: 1,25;
-  letter-spacing: 0.0281em;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
   text-transform: uppercase;
+  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
-
 .night-mode .hero-title {
-  color: #F0F0F0;
+  color: #14c57c;
   transition: color 0.3s ease;
+  text-shadow: 7px 7px 7px rgba(255, 255, 255, 0.5);
 }
 
 .hero-title-color {
-  color: var(--Accet-green, #00B068);
+  color: var(--Black, #292929);
 }
 
 .night-mode .hero-title-color {
-  color: #14C57C;
+  color: #f0f0f0;
   transition: color 0.3s ease;
 }
 
-.picture-container {
+.hero-picture {
   display: flex;
   justify-content: center;
+  width: 100%;
+  overflow: hidden;
 }
-
-.hero-picture {
-  
-}
-
-.section-picture {
-  
-}
-
-.hero-first-list {
-  display: none;
-  flex-direction: row;
-  gap: 40px;
-  padding: 40px 0;
-  justify-content: center;
-  }
 
 .hero-second-container {
-  background: var(--Light-grey, #E4E5E6);
+  background: var(--Light-grey, #e4e5e6);
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .night-mode .hero-second-container {
-  background: #2A2D32;
+  background: #2a2d32;
   transition: color 0.3s ease;
 }
 
@@ -77,11 +83,21 @@
   letter-spacing: 0.0277em;
   text-transform: uppercase;
   padding: 32px 0;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .night-mode .hero-title-small {
-  color: #F0F0F0;
+  color: #f0f0f0;
   transition: color 0.3s ease;
+  text-shadow: 5px 5px 5px rgba(255, 255, 255, 0.5);
+}
+
+.hero-paragraph-color {
+  color: var(--Accet-green, #00b068);
+}
+
+.night-mode .hero-paragraph-color {
+  color: #14c57c;
 }
 
 .hero-media-list {
@@ -92,11 +108,7 @@
   align-items: center;
 }
 
-.hero-media-item {
-}
-
 .hero-media-link {
-  color: #F0F0F0;
   color: var(--Black, #292929);
   font-family: Poppins;
   font-size: 16px;
@@ -104,10 +116,18 @@
   font-weight: 300;
   line-height: 1.5;
   letter-spacing: 0.0312em;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .night-mode .hero-media-link {
-  color: #F0F0F0;
+  color: #f0f0f0;
+  transition: color 0.3s ease;
+  text-shadow: 5px 5px 5px rgba(255, 255, 255, 0.5);
+}
+
+.hero-media-link:hover,
+.hero-media-link:focus {
+  color: var(--Accet-green, #00b068);
   transition: color 0.3s ease;
 }
 
@@ -115,12 +135,12 @@
   .hero-title {
     font-size: 124px;
     font-weight: 400;
-    line-height: 1.16; 
+    line-height: 1.16;
     letter-spacing: 0.0145em;
     overflow: hidden;
   }
 
-  .picture-container {
+  .hero-picture {
     justify-content: flex-end;
     margin-top: -92px;
   }
@@ -138,24 +158,36 @@
     padding: 40px 0;
     justify-content: center;
   }
+  
+  .hero-position {
+    background: url(../img/2-hero/hero-background-tablet.png),
+      url(../img/2-hero/hero-background-tablet-2x.png) no-repeat;
+      background-size:contain;
+      background-position: top right;
+      background-repeat: no-repeat;
+  }
 }
 
 @media screen and (min-width: 1280px) {
   #hero {
-    padding-top: 32px;
+    padding-top: 16px;
   }
+
   .hero-second-container {
     flex-direction: row;
     overflow: hidden;
   }
 
-  .picture-container {
+  .hero-picture {
     width: 100%;
+    margin-top: 0;
+    align-items: flex-end;
   }
 
   .picture {
     width: 100%;
-    height: 100%;
+    height: auto;
+    object-fit: contain;
   }
 
   .hero-position {
@@ -163,18 +195,22 @@
     justify-content: space-between;
   }
 
-  .picture-container {
-    margin-top: 0;
-  }
-
   .hero-title {
     font-size: 136px;
     line-height: 1.147;
-    padding-top: 192px;
+    padding-top: 176px;
+    padding-bottom: 144px;
   }
 
-  .hero-first-list {
-    /* display: flex; */
+  .hero-title-small {
+    padding: 120px 104px;
+  }
+
+  .hero-position {
+    background: url(../img/2-hero/hero-background-desktop.png),
+    url(../img/2-hero/hero-background-desktop-2x.png) no-repeat;
+    background-size:contain;
+    background-position: top right;
+    background-repeat: no-repeat;
   }
 }
-
