@@ -26,7 +26,7 @@ body {
   color: white;
   margin: 0 auto;
   padding: 0 15px;
-  max-width: 100%;
+  max-width: 360px;
 }
 
 .hero-title {
@@ -37,13 +37,13 @@ body {
   line-height: 1.25;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  /* text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5); */
 }
 
 .night-mode .hero-title {
   color: #14c57c;
   transition: color 0.3s ease;
-  text-shadow: 7px 7px 7px rgba(255, 255, 255, 0.5);
+  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
 .hero-title-color {
@@ -64,8 +64,8 @@ body {
 
 .hero-second-container {
   background: var(--Light-grey, #e4e5e6);
-  width: 100%;
   overflow-x: hidden;
+  margin: 0 auto;
 }
 
 .night-mode .hero-second-container {
@@ -83,13 +83,14 @@ body {
   letter-spacing: 0.0277em;
   text-transform: uppercase;
   padding: 32px 0;
-  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  /* text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); */
+  max-width: 360px;
+  margin: 0 auto;
 }
 
 .night-mode .hero-title-small {
   color: #f0f0f0;
   transition: color 0.3s ease;
-  text-shadow: 5px 5px 5px rgba(255, 255, 255, 0.5);
 }
 
 .hero-paragraph-color {
@@ -106,6 +107,8 @@ body {
   flex-direction: column;
   gap: 24px;
   align-items: center;
+  max-width: 360px;
+  margin: 0 auto;
 }
 
 .hero-media-link {
@@ -116,13 +119,11 @@ body {
   font-weight: 300;
   line-height: 1.5;
   letter-spacing: 0.0312em;
-  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .night-mode .hero-media-link {
   color: #f0f0f0;
   transition: color 0.3s ease;
-  text-shadow: 5px 5px 5px rgba(255, 255, 255, 0.5);
 }
 
 .hero-media-link:hover,
@@ -150,6 +151,7 @@ body {
     font-weight: 500;
     line-height: 1.33;
     padding: 64px 0;
+    max-width: 768px;
   }
 
   .hero-media-list {
@@ -157,6 +159,7 @@ body {
     gap: 40px;
     padding: 40px 0;
     justify-content: center;
+    max-width: 768px;
   }
   
   .hero-position {
@@ -165,6 +168,7 @@ body {
       background-size:contain;
       background-position: top right;
       background-repeat: no-repeat;
+    max-width: 768px;
   }
 }
 
@@ -193,6 +197,7 @@ body {
   .hero-position {
     flex-direction: row;
     justify-content: space-between;
+    max-width: 1280px;
   }
 
   .hero-title {
@@ -204,6 +209,11 @@ body {
 
   .hero-title-small {
     padding: 120px 104px;
+    max-width: 1280px;
+  }
+
+  .hero-media-list {
+    max-width: 1280px;
   }
 
   .hero-position {
