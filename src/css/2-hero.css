@@ -37,7 +37,6 @@ body {
   line-height: 1.25;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  /* text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5); */
 }
 
 .night-mode .hero-title {
@@ -83,7 +82,6 @@ body {
   letter-spacing: 0.0277em;
   text-transform: uppercase;
   padding: 32px 0;
-  /* text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); */
   max-width: 360px;
   margin: 0 auto;
 }
@@ -91,6 +89,15 @@ body {
 .night-mode .hero-title-small {
   color: #f0f0f0;
   transition: color 0.3s ease;
+  text-shadow: 5px 5px 5px rgba(255, 255, 255, 0.5);
+}
+
+.hero-paragraph-color {
+  color: var(--Accet-green, #00b068);
+}
+
+.night-mode .hero-paragraph-color {
+  color: #14c57c;
 }
 
 .hero-paragraph-color {
@@ -119,6 +126,7 @@ body {
   font-weight: 300;
   line-height: 1.5;
   letter-spacing: 0.0312em;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .night-mode .hero-media-link {
@@ -169,6 +177,14 @@ body {
       background-position: top right;
       background-repeat: no-repeat;
     max-width: 768px;
+  }
+  
+  .hero-position {
+    background: url(../img/2-hero/hero-background-tablet.png),
+      url(../img/2-hero/hero-background-tablet-2x.png) no-repeat;
+      background-size:contain;
+      background-position: top right;
+      background-repeat: no-repeat;
   }
 }
 

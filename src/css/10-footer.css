@@ -1,12 +1,15 @@
 /* PHONE */
 
-.footer-container {
+#footer {
   padding: 40px 0 24px 0;
-  /* border-top: 1px solid var(--Light-grey, #E4E5E6); */
 }
 
 .border-top {
   border-top: 1px solid var(--Light-grey, #E4E5E6);
+}
+
+.footer-title-container {
+  margin-bottom: 40px;
 }
 
 .footer-title {
@@ -21,6 +24,7 @@
 
 .night-mode .footer-title {
   color: #F0F0F0;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -40,7 +44,6 @@
 }
 
 .footer-media-list {
-  margin-bottom: 40px;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -94,9 +97,19 @@
   flex-direction: column;
 }
 
+@media screen and (min-width:360px) {
+  .footer-container {
+      max-width: 360px;
+    }
+}
+
 /* TABLET */
 
 @media screen and (min-width:768px) {
+  .footer-container {
+      max-width: 768px;
+    }
+
   .footer-media-list {
     flex-direction: row;
     gap: 40px;
@@ -111,6 +124,10 @@
 /* Desktop */
 
 @media screen and (min-width:1280px) {
+  .footer-container {
+      max-width: 1280px;
+    }
+
   .footer-title-container {
     display: flex;
     flex-direction: row;

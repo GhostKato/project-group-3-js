@@ -8,21 +8,21 @@
 
     <div class="contacts-and-form" id="contacts">
       <address class="together-contacts-container">
-        <h3 class="together-contacts-title">
+        <p class="together-contacts-title" data-aos="fade-down">
           Contact me to transform your ideas into exceptional solutions.
-        </h3>
+        </p>
         <ul class="together-contacts-list">
-          <li class="together-contacts-item">
+          <li class="together-contacts-item" data-aos="fade-right">
             <svg class="together-svg" width="24" height="24">
               <use href="./img/icons.svg#icon-tel"></use>
             </svg>
 
-            <a class="together-contacts-link" href="tel:+38 090 456 78 90"
+            <a class="together-contacts-link" href="tel:+380904567890"
               >+38 090 456 78 90</a
             >
           </li>
 
-          <li class="together-contacts-item">
+          <li class="together-contacts-item" data-aos="fade-right">
             <svg class="together-svg" width="24" height="24">
               <use href="./img/icons.svg#icon-email"></use>
             </svg>
@@ -34,7 +34,7 @@
             >
           </li>
 
-          <li class="together-contacts-item">
+          <li class="together-contacts-item" data-aos="fade-right">
             <svg class="together-svg" width="24" height="24">
               <use href="./img/icons.svg#icon-geo"></use>
             </svg>
@@ -51,7 +51,7 @@
 
       <!-- Form -->
       <form class="together-form">
-        <label class="position-together-error">
+        <label data-aos="fade-left">
           <svg class="together-icon-ok" width="16" height="16">
             <use href="./img/icons.svg#icon-ep_success-filled"></use>
           </svg>
@@ -62,12 +62,14 @@
             placeholder="Your email*"
             pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
           />
-          <p class="together-text-error">Invalid name, try again</p>
         </label>
-        <label>
+        <p class="together-text-error">Invalid name, try again</p>
+        <label data-aos="fade-left">
           <textarea class="together-text" placeholder="Message"></textarea>
         </label>
-        <button class="together-button" type="submit">Sеnd Message</button>
+        <button class="together-button" type="submit" data-aos="fade-top">
+          Sеnd Message
+        </button>
       </form>
     </div>
   </div>

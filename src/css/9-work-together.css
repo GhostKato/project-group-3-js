@@ -1,4 +1,5 @@
 .work-together-container {
+  padding-bottom: 80px;
 }
 
 .together-title {
@@ -9,12 +10,11 @@
   line-height: 64px;
   letter-spacing: 1.8px;
   text-transform: uppercase;
-  margin-bottom: 40px;
-  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  padding-bottom: 40px;
 }
 
 .night-mode .together-title {
-  text-shadow: 5px 5px 5px rgba(255, 255, 255, 0.5);
+  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
 .together-title-green {
@@ -27,7 +27,7 @@
 }
 
 .together-contacts-container {
-  margin-bottom: 40px;
+  padding-bottom: 40px;
 }
 
 .together-contacts-title {
@@ -38,12 +38,11 @@
   line-height: 1.55;
   letter-spacing: 0.5px;
   text-transform: uppercase;
-  margin-bottom: 32px;
-  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  padding-bottom: 32px;
 }
 
-.night-mode .together-contacts-title {
-  text-shadow: 5px 5px 5px rgba(255, 255, 255, 0.5);
+.night-mode .together-title {
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .together-contacts-list {
@@ -71,11 +70,10 @@
   letter-spacing: 0.003em;
   margin-left: 40px;
   transition: color 0.3s ease;
-  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .night-mode .together-contacts-link {
-  text-shadow: 5px 5px 5px rgba(255, 255, 255, 0.5);
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .together-contacts-link:hover {
@@ -90,7 +88,7 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
-  margin-bottom: 80px;
+  align-items: center;
 }
 
 .together-email {
@@ -100,12 +98,11 @@
   border-radius: 8px;
   border: none;
   background: #e4e5e6;
-  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
   transition: outline 0.1s ease;
 }
 
 .night-mode .together-email {
-  box-shadow: 5px 5px 5px rgba(87, 84, 84, 0.5);
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
 }
 
 .together-email:focus {
@@ -124,12 +121,11 @@
   border: none;
   background: #e4e5e6;
   resize: none;
-  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
   transition: outline 0.1s ease;
 }
 
 .night-mode .together-text {
-  box-shadow: 5px 5px 5px rgba(87, 84, 84, 0.5);
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
 }
 
 .together-text:focus {
@@ -169,11 +165,10 @@
   text-transform: uppercase;
   color: #f0f0f0;
   transition: background 0.3s ease;
-  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
 }
 
 .night-mode .together-button {
-  box-shadow: 5px 5px 5px rgba(87, 84, 84, 0.5);
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
 }
 
 .together-button:hover {
@@ -185,6 +180,19 @@
 }
 
 @media screen and (min-width: 360px) {
+  .together-title {
+    max-width: 260px;
+  }
+
+  .together-contacts-title {
+    max-width: 300px;
+  }
+
+  .together-text,
+  .together-email,
+  .together-button {
+    width: 320px;
+  }
 }
 
 /* TABLET */
@@ -208,7 +216,7 @@
     font-size: 108px;
     line-height: 1.14;
     letter-spacing: 0.016em;
-    margin-bottom: 60px;
+    padding-bottom: 60px;
     max-width: 530px;
   }
 
@@ -227,12 +235,24 @@
     flex-direction: row;
   }
 
-  .together-form {
-    margin-bottom: 124px;
+  .together-text {
+    width: 704px;
+  }
+
+  .together-email {
+    width: 704px;
+  }
+
+  .work-together-container {
+    padding-bottom: 124px;
   }
 
   .together-button {
     width: 173px;
+  }
+
+  .together-form {
+    align-items: flex-start;
   }
 }
 
@@ -252,7 +272,7 @@
   }
 
   .together-title {
-    margin-bottom: 80px;
+    padding-bottom: 80px;
   }
   .contacts-and-form {
     flex-direction: row;
@@ -260,20 +280,32 @@
   }
 
   .together-contacts-container {
-    margin-bottom: 0;
+    padding-bottom: 0;
   }
 
   .together-contacts-title {
-    margin-bottom: 120px;
+    padding-bottom: 120px;
   }
 
   .together-contacts-list {
     flex-direction: column;
   }
 
+  .work-together-container {
+    padding-bottom: 164px;
+  }
+
+  .together-text {
+    width: 592px;
+  }
+
+  .together-email {
+    width: 592px;
+  }
+
   .together-form {
-    margin-bottom: 164px;
     flex-grow: 1;
+    position: relative;
   }
 }
 
@@ -300,6 +332,10 @@
   border-radius: 16px;
   background: #f0f0f0;
   position: relative;
+}
+
+.night-mode .together-modal-content {
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
 }
 
 .together-modal-close {
@@ -337,6 +373,10 @@
   color: #00b068;
 }
 
+.night-mode .together-modal-title {
+  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
 .together-modal-text {
   font-family: Poppins;
   font-size: 16px;
@@ -345,6 +385,10 @@
   line-height: 1.5;
   letter-spacing: 0.03em;
   text-align: center;
+}
+
+.night-mode .together-modal-text {
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 @media screen and (min-width: 768px) {
@@ -422,21 +466,7 @@
   fill: #14c57c;
 }
 
-.together-input-ok {
-  outline: 2px solid #00b068;
-  background-color: #e4e5e6;
-}
-
-.night-mode .together-input-ok {
-  outline-color: #14c57c;
-  background-color: #2a2d32;
-}
-
 /* ERRORS */
-
-.position-together-error {
-  position: relative;
-}
 
 .together-text-error {
   display: none;
@@ -449,8 +479,4 @@
   letter-spacing: 0.041em;
   position: absolute;
   top: 50px;
-}
-
-.together-input-error {
-  outline-color: #f05748;
 }

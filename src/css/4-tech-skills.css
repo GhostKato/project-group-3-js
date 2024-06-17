@@ -15,7 +15,7 @@
   padding: 40px 0px;
   align-items: center;
   gap: 16px;
-  transform: rotate(3deg);
+  transform: rotate(2.5deg);
   height: 128px;
   display: inline-flex;
   width: 100%;
@@ -53,6 +53,7 @@
   letter-spacing: 0.5px;
   text-transform: uppercase;
   text-wrap: nowrap;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .ul-tech-skills:first-child {
@@ -69,6 +70,7 @@
   letter-spacing: 0.5px;
   text-transform: uppercase;
   text-wrap: nowrap;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .li-tech-skills::before {
@@ -80,6 +82,7 @@
   width: 8px;
   margin-top: 17px;
   margin-left: -21px;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .li-tech-skills-two::before {
@@ -91,6 +94,7 @@
   width: 8px;
   margin-top: 17px;
   margin-left: -21px;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .tech-skills {
@@ -133,10 +137,6 @@
 
 /* dark theme */
 
-.night-mode .tech-skills {
-  height: 298px;
-}
-
 .night-mode  .ribbon-dark {
   background: #1E2023;
   margin: 0 !important;
@@ -150,7 +150,6 @@
   gap: 16px;
   position: relative;
   z-index: 10;
-  height: 128px;
   display: inline-flex;
   width: 100%;
 }
@@ -160,8 +159,6 @@
   padding: 40px 0px;
   align-items: center;
   gap: 16px;
-  transform: rotate(3deg);
-  height: 128px;
   display: inline-flex;
   width: 100%;
 }
@@ -187,7 +184,6 @@
   margin-top: 17px;
   margin-left: -21px;
 }
-
 .night-mode .tech-dark-two {
   color: #14C57C;
   font-family: Poppins;
@@ -215,11 +211,6 @@
 @media screen and (min-width: 360px) {
   .div-skills-list {
     height: 104px;
-  }
-
-  .div-skills-list-two {
-    height: 104px;
-    transform: rotate(4deg);
   }
 
   .li-tech-skills {

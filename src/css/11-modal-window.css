@@ -1,14 +1,15 @@
-.mobile-wraper {
+.mobile-container {
   position: fixed;
-  display: flex;
   top: 0;
   left: 0;
-  justify-content: end;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(20, 20, 20, 0.863);
   z-index: 99999;
   opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: #f0f0f0;
   transition: opacity 1s ease;
   pointer-events: none;
 }
@@ -16,15 +17,6 @@
 .is-open {
   opacity: 1;
   pointer-events: auto;
-}
-
-.mobile-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100vh;
-  width: 100vw;
-  background-color: #f0f0f0;
 }
 
 .mobile-padding {
@@ -49,6 +41,10 @@
   line-height: 1;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+
+.night-mode .mobile-title {
+  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
 .mobile-title-color {
@@ -82,7 +78,7 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   background-image: url(../img/11-modal-window/mobile-modal.png);
   background-repeat: no-repeat;
@@ -116,6 +112,14 @@
   transition: color 0.3s ease;
 }
 
+.night-mode .mobile-link {
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.mobile-link:active {
+  text-shadow: none;
+}
+
 .mobile-link:hover {
   color: #009156;
 }
@@ -138,6 +142,14 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   transition: background-color 0.3s ease;
+}
+
+.night-mode .mobile-main-btn {
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.mobile-main-btn:active {
+  box-shadow: none;
 }
 
 .mobile-main-btn:hover {
@@ -205,9 +217,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .mobile-container {
-    width: 500px;
-  }
   .mobile-main {
     background-image: url(../img/11-modal-window/tablet-modal.png);
   }
@@ -219,10 +228,19 @@
       background-image: url(../img/11-modal-window/tablet-modal@2x.png);
     }
   }
+
+  .mobile-social {
+    flex-direction: row;
+    height: 104px;
+  }
+
+  .mobile-main-btn {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1280px) {
-  .mobile-wraper {
+  .mobile-container {
     display: none;
   }
 }
