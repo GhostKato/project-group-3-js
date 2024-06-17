@@ -10,6 +10,11 @@
   letter-spacing: 1.8px;
   text-transform: uppercase;
   margin-bottom: 40px;
+  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.night-mode .together-title {
+  text-shadow: 5px 5px 5px rgba(255, 255, 255, 0.5);
 }
 
 .together-title-green {
@@ -34,6 +39,11 @@
   letter-spacing: 0.5px;
   text-transform: uppercase;
   margin-bottom: 32px;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.night-mode .together-contacts-title {
+  text-shadow: 5px 5px 5px rgba(255, 255, 255, 0.5);
 }
 
 .together-contacts-list {
@@ -61,10 +71,19 @@
   letter-spacing: 0.003em;
   margin-left: 40px;
   transition: color 0.3s ease;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.night-mode .together-contacts-link {
+  text-shadow: 5px 5px 5px rgba(255, 255, 255, 0.5);
 }
 
 .together-contacts-link:hover {
   color: #009156;
+}
+
+.together-contacts-link:active {
+  text-shadow: none;
 }
 
 .together-form {
@@ -81,11 +100,20 @@
   border-radius: 8px;
   border: none;
   background: #e4e5e6;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
   transition: outline 0.1s ease;
+}
+
+.night-mode .together-email {
+  box-shadow: 5px 5px 5px rgba(87, 84, 84, 0.5);
 }
 
 .together-email:focus {
   outline: 2px solid #009156;
+}
+
+.together-email:active {
+  box-shadow: none;
 }
 
 .together-text {
@@ -96,11 +124,20 @@
   border: none;
   background: #e4e5e6;
   resize: none;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
   transition: outline 0.1s ease;
+}
+
+.night-mode .together-text {
+  box-shadow: 5px 5px 5px rgba(87, 84, 84, 0.5);
 }
 
 .together-text:focus {
   outline: 2px solid #009156;
+}
+
+.together-text:focus:active {
+  box-shadow: none;
 }
 
 .together-email::placeholder,
@@ -132,10 +169,19 @@
   text-transform: uppercase;
   color: #f0f0f0;
   transition: background 0.3s ease;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.night-mode .together-button {
+  box-shadow: 5px 5px 5px rgba(87, 84, 84, 0.5);
 }
 
 .together-button:hover {
   background: #009156;
+}
+
+.together-button:active {
+  box-shadow: none;
 }
 
 @media screen and (min-width: 360px) {
