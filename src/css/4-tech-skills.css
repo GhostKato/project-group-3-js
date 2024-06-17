@@ -53,7 +53,6 @@
   letter-spacing: 0.5px;
   text-transform: uppercase;
   text-wrap: nowrap;
-  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .ul-tech-skills:first-child {
@@ -70,7 +69,6 @@
   letter-spacing: 0.5px;
   text-transform: uppercase;
   text-wrap: nowrap;
-  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .li-tech-skills::before {
@@ -82,7 +80,6 @@
   width: 8px;
   margin-top: 17px;
   margin-left: -21px;
-  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .li-tech-skills-two::before {
@@ -94,7 +91,6 @@
   width: 8px;
   margin-top: 17px;
   margin-left: -21px;
-  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .tech-skills {
