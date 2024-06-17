@@ -1,4 +1,5 @@
 .work-together-container {
+  padding-bottom: 80px;
 }
 
 .together-title {
@@ -10,6 +11,9 @@
   letter-spacing: 1.8px;
   text-transform: uppercase;
   padding-bottom: 40px;
+}
+
+.night-mode .together-title {
   text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -35,6 +39,9 @@
   letter-spacing: 0.5px;
   text-transform: uppercase;
   padding-bottom: 32px;
+}
+
+.night-mode .together-title {
   text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -63,6 +70,9 @@
   letter-spacing: 0.003em;
   margin-left: 40px;
   transition: color 0.3s ease;
+}
+
+.night-mode .together-contacts-link {
   text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -78,7 +88,7 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
-  margin-bottom: 80px;
+  align-items: center;
 }
 
 .together-email {
@@ -88,8 +98,11 @@
   border-radius: 8px;
   border: none;
   background: #e4e5e6;
-  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
   transition: outline 0.1s ease;
+}
+
+.night-mode .together-email {
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
 }
 
 .together-email:focus {
@@ -108,8 +121,11 @@
   border: none;
   background: #e4e5e6;
   resize: none;
-  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
   transition: outline 0.1s ease;
+}
+
+.night-mode .together-text {
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
 }
 
 .together-text:focus {
@@ -149,6 +165,9 @@
   text-transform: uppercase;
   color: #f0f0f0;
   transition: background 0.3s ease;
+}
+
+.night-mode .together-button {
   box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -161,6 +180,19 @@
 }
 
 @media screen and (min-width: 360px) {
+  .together-title {
+    max-width: 260px;
+  }
+
+  .together-contacts-title {
+    max-width: 300px;
+  }
+
+  .together-text,
+  .together-email,
+  .together-button {
+    width: 320px;
+  }
 }
 
 /* TABLET */
@@ -184,7 +216,7 @@
     font-size: 108px;
     line-height: 1.14;
     letter-spacing: 0.016em;
-    margin-bottom: 60px;
+    padding-bottom: 60px;
     max-width: 530px;
   }
 
@@ -203,12 +235,24 @@
     flex-direction: row;
   }
 
-  .together-form {
-    margin-bottom: 124px;
+  .together-text {
+    width: 704px;
+  }
+
+  .together-email {
+    width: 704px;
+  }
+
+  .work-together-container {
+    padding-bottom: 124px;
   }
 
   .together-button {
     width: 173px;
+  }
+
+  .together-form {
+    align-items: flex-start;
   }
 }
 
@@ -228,7 +272,7 @@
   }
 
   .together-title {
-    margin-bottom: 80px;
+    padding-bottom: 80px;
   }
   .contacts-and-form {
     flex-direction: row;
@@ -236,19 +280,30 @@
   }
 
   .together-contacts-container {
-    margin-bottom: 0;
+    padding-bottom: 0;
   }
 
   .together-contacts-title {
-    margin-bottom: 120px;
+    padding-bottom: 120px;
   }
 
   .together-contacts-list {
     flex-direction: column;
   }
 
+  .work-together-container {
+    padding-bottom: 164px;
+  }
+
+  .together-text {
+    width: 592px;
+  }
+
+  .together-email {
+    width: 592px;
+  }
+
   .together-form {
-    margin-bottom: 164px;
     flex-grow: 1;
     position: relative;
   }
@@ -277,6 +332,9 @@
   border-radius: 16px;
   background: #f0f0f0;
   position: relative;
+}
+
+.night-mode .together-modal-content {
   box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -313,6 +371,9 @@
   letter-spacing: 0.025em;
   text-transform: uppercase;
   color: #00b068;
+}
+
+.night-mode .together-modal-title {
   text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -324,6 +385,9 @@
   line-height: 1.5;
   letter-spacing: 0.03em;
   text-align: center;
+}
+
+.night-mode .together-modal-text {
   text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
