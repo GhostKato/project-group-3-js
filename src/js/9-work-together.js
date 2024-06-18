@@ -5,33 +5,28 @@ import 'izitoast/dist/css/iziToast.min.css';
 const form = document.querySelector('.together-form');
 const modal = document.getElementById('together-modal');
 const closeButton = document.querySelector('.together-modal-close');
-
 const errorText = document.querySelector('.together-text-error');
-
-
 const okIcon = document.querySelector('.together-icon-ok');
-
-
-const text = document.querySelector('.together-text');
-
+const emailInput = document.querySelector('.together-email');
+const textInput = document.querySelector('.together-text');
 
 form.addEventListener('submit', function (event) {
     event.preventDefault();
 
-    const email = document.querySelector('.together-email').value;
-    const comment = document.querySelector('.together-text').value;
+    const email = emailInput.value;
+    const comment = textInput.value;
 
     if (!email.match(/^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/)) {
         okIcon.style.display = 'none';
         errorText.style.display = 'block';
-      iziToast.info({
-        title: 'Hey!',
-          message: 'Please enter a valid email address!',
-        position: 'topCenter',
-      });        
-      return;
+        iziToast.info({
+            title: 'Hey!',
+            message: 'Please enter a valid email address!',
+            position: 'topCenter',
+        });
+        return;
     }
-    
+
     sendPost(email, comment);
 });
 
@@ -42,57 +37,61 @@ function sendPost(email, comment) {
     };
 
     axios.post('https://portfolio-js.b.goit.study/api/requests', data, {
-      headers: {
-        Accept: 'application/json',
-        'Content-Type': 'application/json',
-      },
+        headers: {
+            Accept: 'application/json',
+            'Content-Type': 'application/json',
+        },
     })
-        .then(response => {
-            if (response.data) {
-                modal.style.display = 'flex';                
-                form.reset();
-          }        
-        
-      })
-      .catch(error => {
+    .then(response => {
+        if (response.data) {
+            openModal();
+            form.reset();
+        }
+    })
+    .catch(error => {
         iziToast.error({
-          title: 'Error',
-          message: 'Failed to submit your request. Please try again later.',
-          position: 'topCenter',
+            title: 'Error',
+            message: 'Failed to submit your request. Please try again later.',
+            position: 'topCenter',
         });
-      });
+    });
 }
 
-const email = document.querySelector('.together-email');
-email.addEventListener('input', function(event) {
+emailInput.addEventListener('input', function(event) {
     const inputValue = event.target.value.trim();
 
-    if (inputValue === '') {        
+    if (inputValue === '') {
         okIcon.style.display = 'none';
         errorText.style.display = 'none';
-    } else if (!inputValue.match(/^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/)) {        
+    } else if (!inputValue.match(/^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/)) {
         okIcon.style.display = 'none';
         errorText.style.display = 'block';
-    } else {        
+    } else {
         okIcon.style.display = 'block';
         errorText.style.display = 'none';
     }
 });
 
-document.addEventListener('keydown', function (event) {
-    if (event.key === 'Escape') {
-        modal.style.display = 'none';
-    }
-});
-
-closeButton.addEventListener('click', () => {
- modal.style.display = 'none';
-});
+closeButton.addEventListener('click', closeModal);
 
 window.addEventListener('click', (event) => {
     if (event.target === modal) {
-        modal.style.display = 'none';
-     }
- });
+        closeModal();
+    }
+});
 
+function openModal() {
+    modal.style.display = 'flex';
+    document.addEventListener('keydown', handleEscape);
+}
 
+function closeModal() {
+    modal.style.display = 'none';
+    document.removeEventListener('keydown', handleEscape);
+}
+
+function handleEscape(event) {
+    if (event.key === 'Escape') {
+        closeModal();
+    }
+}
