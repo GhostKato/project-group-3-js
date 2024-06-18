@@ -8,6 +8,10 @@
   margin-bottom: 40px;
 }
 
+.night-mode .benefits-title {
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
 .benefits-decor-img {
   display: none;
 }
