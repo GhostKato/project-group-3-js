@@ -127,6 +127,7 @@ li .text-last {
     (min-resolution: 2dppx) {
     .benefits-decor-img {
       background-image: url(../img/6-benefits/decor-bg-32x.png);
+      background-size: 80%;
     }
   }
 
