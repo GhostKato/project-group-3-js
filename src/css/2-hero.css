@@ -20,9 +20,9 @@ body {
   flex-direction: column;
   background: url(../img/2-hero/hero-background-mobile.png),
     url(../img/2-hero/hero-background-mobile-2x.png) no-repeat;
-    background-size:contain;
-    background-position: top;
-    background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
   color: white;
   margin: 0 auto;
   padding: 0 15px;
@@ -41,7 +41,6 @@ body {
 
 .night-mode .hero-title {
   color: #14c57c;
-  transition: color 0.3s ease;
   text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -51,7 +50,6 @@ body {
 
 .night-mode .hero-title-color {
   color: #f0f0f0;
-  transition: color 0.3s ease;
 }
 
 .hero-picture {
@@ -69,7 +67,6 @@ body {
 
 .night-mode .hero-second-container {
   background: #2a2d32;
-  transition: color 0.3s ease;
 }
 
 .hero-title-small {
@@ -88,8 +85,7 @@ body {
 
 .night-mode .hero-title-small {
   color: #f0f0f0;
-  transition: color 0.3s ease;
-  text-shadow: 5px 5px 5px rgba(255, 255, 255, 0.5);
+  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
 .hero-paragraph-color {
@@ -126,18 +122,17 @@ body {
   font-weight: 300;
   line-height: 1.5;
   letter-spacing: 0.0312em;
-  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  transition: color 0.3s ease;
 }
 
 .night-mode .hero-media-link {
   color: #f0f0f0;
-  transition: color 0.3s ease;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .hero-media-link:hover,
 .hero-media-link:focus {
   color: var(--Accet-green, #00b068);
-  transition: color 0.3s ease;
 }
 
 @media screen and (min-width: 768px) {
@@ -169,22 +164,22 @@ body {
     justify-content: center;
     max-width: 768px;
   }
-  
+
   .hero-position {
     background: url(../img/2-hero/hero-background-tablet.png),
       url(../img/2-hero/hero-background-tablet-2x.png) no-repeat;
-      background-size:contain;
-      background-position: top right;
-      background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top right;
+    background-repeat: no-repeat;
     max-width: 768px;
   }
-  
+
   .hero-position {
     background: url(../img/2-hero/hero-background-tablet.png),
       url(../img/2-hero/hero-background-tablet-2x.png) no-repeat;
-      background-size:contain;
-      background-position: top right;
-      background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top right;
+    background-repeat: no-repeat;
   }
 }
 
@@ -234,8 +229,8 @@ body {
 
   .hero-position {
     background: url(../img/2-hero/hero-background-desktop.png),
-    url(../img/2-hero/hero-background-desktop-2x.png) no-repeat;
-    background-size:contain;
+      url(../img/2-hero/hero-background-desktop-2x.png) no-repeat;
+    background-size: contain;
     background-position: top right;
     background-repeat: no-repeat;
   }
