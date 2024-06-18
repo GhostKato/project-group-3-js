@@ -12,7 +12,6 @@
   margin-bottom: 40px;
   text-align: left;
   width: 100%;
-  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
 .about-title {
@@ -22,6 +21,9 @@
   line-height: 64px;
   text-transform: uppercase;
   text-align: left;
+}
+
+.night-mode .about-title {
   text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -61,8 +63,11 @@
   text-transform: uppercase;
   margin-bottom: 32px;
   padding-top: 40px;
-  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
   width: 100%;
+}
+
+.night-mode .about-me-title {
+  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
 .about-bio-text {
@@ -71,7 +76,6 @@
   letter-spacing: 0.2px;
   line-height: 24px;
   margin-bottom: 24px;
-  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
   width: 100%;
 }
 
@@ -85,7 +89,6 @@
   padding-left: 20px;
   width: 100%;
   max-width: 320px;
-  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .about-education-list::before,
