@@ -56,6 +56,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
                 const project = projects[currentIndex];
                 const listItem = document.createElement('li');
+                listItem.classList.add("project-list");
                 listItem.innerHTML = `
                     <picture data-aos="zoom-in">
                         <source srcset="${project.image2x} 2x, ${project.image} 1x">
@@ -65,11 +66,12 @@ document.addEventListener('DOMContentLoaded', function () {
                         <p class="project-technologies">${project.technologies}</p>
                         <div class="project-title-btn">
                             <p class="project-title">${project.title}</p>
-                            <button class="project-btn" onclick="window.open('${project.link}', '_blank')">VISIT
-                                <svg class="arrow-up-right" width="14.5" height="14.5">
-                                    <use xlink:href="${iconsSvgUrl}#icon-visit"></use>
-                                </svg>
-                            </button>
+                            <button class="project-btn" onclick="window.open('${project.link}', '_blank')">
+    VISIT
+    <svg class="arrow-up-right" width="14.5" height="14.5">
+        <use xlink:href="${iconsSvgUrl}#icon-visit"></use>
+    </svg>
+</button>
                         </div>
                     </div>
                 `;
@@ -78,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
             loadMoreButton.classList.remove('loading');
             AOS.refresh();
-        }, 1500);
+        }, 700);
     }
 
     loadMoreButton.addEventListener('click', loadProjects);

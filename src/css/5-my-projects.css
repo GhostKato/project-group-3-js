@@ -1,3 +1,7 @@
+.my-projects-container {
+max-width: 360px;
+}
+  
 
 .my-projects-title {
   font-family: Impact;
@@ -11,8 +15,12 @@
   margin: 0 auto;
   max-width: 100%;
   box-sizing: border-box;
-  padding-bottom: 40px;
 }
+
+.night-mode .my-projects-title {
+text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
 
 .my-projects-title span {
   color: #00a86b;
@@ -22,6 +30,8 @@
   border-radius: 16px;
   width: 100%;
   height: auto;
+  margin-top: 40px;
+  transition: transform 0.3s ease-in-out;
 }
 
 .project-technologies {
@@ -31,8 +41,8 @@
   font-weight: 300;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  padding-bottom: 16px;
-  padding-top: 12px;
+  margin-bottom: 16px;
+  margin-top: 12px;
 }
 
 .project-title {
@@ -42,6 +52,8 @@
   line-height: 1.25;
   letter-spacing: 0.01em;
   text-transform: uppercase;
+  margin-bottom: 12px;
+  max-width: 320px;
 }
 
 #project-list {
@@ -66,9 +78,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  padding: 10px 20px;
-  margin-top: 10px;
-  margin-bottom: 40px;
+  padding: 12px 24px;
   background-color: #E4E5E6;
   font-family: Poppins;
   font-size: 16px;
@@ -77,10 +87,10 @@
   line-height: 1.5;
   letter-spacing: 0.03em;
   border-radius: 8px;
-  transition: background-color 0.3s, color 0.3s ease;
   float: right;
   border: none;
   gap: 12px;
+  transition: background-color 200ms ease-in-out;
 }
 
 .project-btn:hover {
@@ -89,6 +99,7 @@
 
 .arrow-up-right {
   stroke: #00B068;
+  transition: transform 200ms ease-in-out;
 }
 
 .night-mode .project-btn {
@@ -104,7 +115,6 @@
 #load-more {
   display: block;
   margin: 0 auto;
-  padding: 10px 20px;
   cursor: pointer;
   color: #292929;
   border: none;
@@ -115,7 +125,8 @@
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  transition: color 0.3s ease;
+  margin-top: 40px;
+  transition: all 400ms ease-in-out;
 }
 
 #load-more:hover {
@@ -137,6 +148,8 @@
   border-top: 2px solid #00B068;
   transform: translateY(-50%) rotate(0deg);
 }
+
+/* Style Load More */
 
 @keyframes dots {
   0% {
@@ -163,41 +176,72 @@
   margin-left: 10px;
 }
 
+
+
 @media screen and (min-width: 360px) {}
 
+
+
+/* Tablet */
+
 @media screen and (min-width: 768px) {
+.my-projects-container {
+  max-width: 768px;
+}
+
   .my-projects-title {
     font-size: 108px;
     line-height: 1.14;
-    padding-bottom: 80px;
   }
 
   .project-title {
     font-size: 36px;
     line-height: 1.33;
+    margin-bottom: 0;
+    max-width: 800px;
+  }
+
+    .project-image {
+      margin-top: 60px;
+    }
+
+  .project-technologies {
+    margin-bottom: 16px;
+    margin-top: 20px;
   }
 
   .project-title-btn {
     display: flex;
     justify-content: space-between;
-  }
-
-  .project-btn {
-    margin-top: 0px;
   }
 
   #load-more {
     font-size: 20px;
     line-height: 1.6;
+    margin-top: 72px;
   }
 }
 
+
+/* Desktop */
+
 @media screen and (min-width: 1280px) {
+.my-projects-container {
+  max-width: 1280px;
+  padding-left: 104px;
+  padding-right: 104px;
+}
+
   .my-projects-title {
     font-size: 108px;
     line-height: 1.14;
-    padding-bottom: 80px;
   }
+
+    .project-image {
+      margin-top: 80px;
+      min-width: 1008px;
+      height: 578px;
+    }
 
   .project-title {
     font-size: 36px;
@@ -209,7 +253,9 @@
     justify-content: space-between;
   }
 
-  .project-btn {
-    margin-top: 0px;
-  }
+
+#load-more {
+  margin-top: 92px;
+}
+
 }
