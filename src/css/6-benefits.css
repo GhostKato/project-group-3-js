@@ -1,4 +1,4 @@
- .benefits-title {
+.benefits-title {
   font-family: Impact;
   font-size: 52px;
   font-weight: 400;
@@ -117,7 +117,7 @@ li .text-last {
   }
 
   .benefits-decor-img {
-    background-image: url(../img/6-benefits/decor\ bg\ 31x.png);
+    background-image: url(../img/6-benefits/decor-bg-31x.png);
     width: 532px;
     height: 412px;
   }
@@ -126,7 +126,7 @@ li .text-last {
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .benefits-decor-img {
-      background-image: url(../img/6-benefits/decor\ bg\ 32x.png);
+      background-image: url(../img/6-benefits/decor-bg-32x.png);
     }
   }
 
@@ -149,4 +149,4 @@ li .text-last {
   .flex-wrap {
     position: relative;
   }
-} 
+}
