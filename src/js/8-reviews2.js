@@ -27,6 +27,16 @@ async function fetchReviews() {
   }
 }
 
+function supportsWebP() {
+  return new Promise((resolve) => {
+    const img = new Image();
+    img.onload = () => resolve(img.width === 1);
+    img.onerror = () => resolve(false);
+    img.src = "data:image/webp;base64,UklGRh4AAABXRUJQVlA4TAYAAAAvAAAAAAfQ//73v/+BiOh/AAA=";
+  });
+}
+
+
 async function renderReviews() {
   try {
     const data = await fetchReviews();
@@ -81,6 +91,15 @@ async function renderReviews() {
         },
       },
     });
+
+    const isWebPSupported = await supportsWebP();
+    if (isWebPSupported) {
+      document.querySelectorAll('.reviews-photo').forEach(img => {
+        const webpSrc = img.src.replace(/\.(jpe?g|png)$/i, '.webp');
+        img.src = webpSrc;
+      });
+    }
+    
   } catch (error) {
     review.textContent = 'NOT FOUND';
     iziToast.warning({
