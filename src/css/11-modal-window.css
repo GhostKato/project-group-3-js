@@ -204,7 +204,7 @@
   background-color: #009156;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 360px) {
   .mobile-main {
     display: flex;
     flex-direction: column;
@@ -212,7 +212,7 @@
   }
 
   .mobile-main-btn {
-    width: 300px;
+    width: 320px;
   }
 }
 
