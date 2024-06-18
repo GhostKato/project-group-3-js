@@ -131,6 +131,7 @@ text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
   text-transform: uppercase;
   margin-top: 40px;
   transition: all 400ms ease-in-out;
+  position: relative;
 }
 
 #load-more:hover {
@@ -146,11 +147,30 @@ text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
   color: #00B068;
 }
 
-.arrow-load-more {
-  height: 0px;
-  width: 100%;
-  border-top: 2px solid #00B068;
-  transform: translateY(-50%) rotate(0deg);
+#load-more::before {
+  content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 0px;
+    border-top: 3px solid #00B068;
+    transition: all 300ms ease-in-out;
+}
+
+
+
+#load-more:hover::before {
+  border-color: #00B068;
+}
+
+.night-mode #load-more::after {
+  border-color: #F0F0F0;
+}
+
+.night-mode #load-more:hover::after {
+  border-color: #00B068;
 }
 
 /* Style Load More */
