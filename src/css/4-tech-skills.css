@@ -133,7 +133,7 @@
 
 /* dark theme */
 
-.night-mode  .ribbon-dark {
+.night-mode .ribbon {
   background: #1E2023;
   margin: 0 !important;
   overflow: hidden;
@@ -209,6 +209,10 @@
     height: 104px;
   }
 
+  .div-skills-list-two {
+    height: 104px;
+  }
+
   .li-tech-skills {
     font-size: 32px;
     line-height: 40px;
@@ -247,7 +251,21 @@
 }
 
 @media screen and (min-width: 768px) {
+  .div-skills-list {
+    height: 128px;
+  }
+
+  .div-skills-list-two {
+    height: 128px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
+  .div-skills-list {
+    height: 128px;
+  }
+
+  .div-skills-list-two {
+    height: 128px;
+  }
 }
