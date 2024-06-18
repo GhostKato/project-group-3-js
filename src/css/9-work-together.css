@@ -27,7 +27,7 @@
 }
 
 .together-contacts-container {
-  padding-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .together-contacts-title {
@@ -38,7 +38,7 @@
   line-height: 1.55;
   letter-spacing: 0.5px;
   text-transform: uppercase;
-  padding-bottom: 32px;
+  margin-bottom: 32px;
 }
 
 .night-mode .together-title {
@@ -280,11 +280,11 @@
   }
 
   .together-contacts-container {
-    padding-bottom: 0;
+    margin-bottom: 0;
   }
 
   .together-contacts-title {
-    padding-bottom: 120px;
+    margin-bottom: 120px;
   }
 
   .together-contacts-list {
