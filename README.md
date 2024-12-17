@@ -1,4 +1,4 @@
-# Team project: Portfolio
+# Team project: portfolio
 
 ### Description:
 
