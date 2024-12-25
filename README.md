@@ -2,11 +2,7 @@
 
 ### Description:
 
-This project is a personal website that demonstrates your skills, experience and
-implemented projects. The site has a stylish and adaptive design, interactive
-elements, as well as several useful functions, such as the form for the inverse
-communication, changing the theme of the interface, widgets with frequent
-questions, skills, reviews customers and more.
+A site that demonstrates the skills, experience and implemented projects of the developer. The site has a stylish and adaptive design, interactive elements, as well as several useful functions, such as the form for the inverse communication, changing the theme of the interface, widgets with frequent questions, skills, reviews customers and more.
 
 ![header-hero](./src/img/readme/header-hero.png)
 
@@ -121,7 +117,7 @@ questions, skills, reviews customers and more.
 
 - Stylish design and adaptability for any device.
 - Easy access to your contact information and the ability to quickly contact by
-  you through the feedback form.
+  you are through the feedback form.
 - Dynamically change the theme depending on the time of day or user choice.
 - Presentation of your skills, customer reviews and frequent questions in a
   convenient format.
