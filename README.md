@@ -18,7 +18,7 @@ A site that demonstrates the skills, experience and implemented projects of the 
    - Creating an Interface in **Figma**, which makes it easy to adapt the site
      to any needs.
 
-   ![header](./src/img/readme/header.png)
+![header](./src/img/readme/header.png)
 
 2. **Adaptive design:**
 
@@ -27,13 +27,13 @@ A site that demonstrates the skills, experience and implemented projects of the 
    - All elements, including fonts and pictures, are adapted for a comfortable
      viewing on any device.
 
-   ![hero](./src/img/readme/hero.png)
+![hero](./src/img/readme/hero.png)
 
 3. **Gallery of projects:**
 
    - Presentation of your projects in the form of cards .
 
-   ![my-projects](./src/img/readme/my-projects.png)
+![my-projects](./src/img/readme/my-projects.png)
 
 4. **Communication form:**
 
@@ -41,7 +41,7 @@ A site that demonstrates the skills, experience and implemented projects of the 
    - The form contains fields for e-mail and a message that allows easy to
      contact you.
 
-   ![together](./src/img/readme/together.png)
+![together](./src/img/readme/together.png)
 
 5. **Change Theme:**
 
@@ -52,20 +52,20 @@ A site that demonstrates the skills, experience and implemented projects of the 
    - The first time you log in, the theme is automatically determined by the
      time of day (day or night mode).
 
-   ![button](./src/img/readme/button.png)
+![button](./src/img/readme/button.png)
 
 6. **Frequently Asked Questions (FAQ):**
 
    - Section with the most common questions and answers to them, which helps
      users quickly get important information.
 
-   ![faq](./src/img/readme/faq.png)
+![faq](./src/img/readme/faq.png)
 
 7. **Skills:**
 
    - A section that presents your key skills and skills in various areas.
 
-   ![benefits](./src/img/readme/benefits.png)
+![benefits](./src/img/readme/benefits.png)
 
 8. **Customer Reviews:**
 
@@ -73,14 +73,14 @@ A site that demonstrates the skills, experience and implemented projects of the 
      colleagues, which increases your reputation.
    - Interactive reviews with the ability to view more comments or ratings.
 
-   ![reviews](./src/img/readme/reviews.png)
+![reviews](./src/img/readme/reviews.png)
 
 9. **Animations and Effects:**
 
    - Using smooth animations for transitions, which makes interaction with the
      site even more pleasant and convenient.
 
-   ![skils](./src/img/readme/skills.png)
+![skils](./src/img/readme/skills.png)
 
 ---
 
@@ -92,7 +92,7 @@ A site that demonstrates the skills, experience and implemented projects of the 
      interface, that is suitable for different sections of the site.
    - Choice of colors for day and night modes.
 
-   ![about-me](./src/img/readme/about-me.png)
+![about-me](./src/img/readme/about-me.png)
 
 2. **Development of functionality:**
 
@@ -100,7 +100,7 @@ A site that demonstrates the skills, experience and implemented projects of the 
    - Styling your site with **CSS3**.
    - Implementing dynamic elements with **JavaScript**.
 
-   ![footer](./src/img/readme/footer.png)
+![footer](./src/img/readme/footer.png)
 
 3. **Testing and Publishing:**
 
@@ -109,7 +109,7 @@ A site that demonstrates the skills, experience and implemented projects of the 
    - Checking the operation of the feedback form and automatically changing the
      topic.
 
-   ![menu](./src/img/readme/menu.png)
+![menu](./src/img/readme/menu.png)
 
 ---
 
